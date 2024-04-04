@@ -1,0 +1,49 @@
+{
+	"permissions": {
+		"allowed": [
+			{
+				"applyTo": "ds",
+				"type": "datastore",
+				"read": [
+					"readAll", "guest"
+				]
+			},
+			{
+				"applyTo": "Agency.todayTurnover",
+				"type": "attribute",
+				"read": [
+					"readTurnover"
+				]
+			}
+		]
+	},
+	"privileges": [
+		{
+			"id": "wyafxQ61YXc2wCwGvGAnRT",
+			"privilege": "readAll",
+			"includes": []
+		},
+		{
+			"id": "94BgU3VrwrMScZZKL5BiJJ",
+			"privilege": "readTurnover",
+			"includes": []
+		}
+	],
+	"roles": [
+		{
+			"id": "oLwWXb3Sj8gdSJeU9xcoFs",
+			"role": "Manager",
+			"privileges": [
+				"readTurnover",
+				"readAll"
+			]
+		},
+		{
+			"id": "m3QnGisW7KVyR5gq7uxsJV",
+			"role": "Employee",
+			"privileges": [
+				"readAll"
+			]
+		}
+	]
+}

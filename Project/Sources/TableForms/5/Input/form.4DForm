@@ -1,0 +1,184 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"label_Name": {
+					"type": "text",
+					"text": "Template name:",
+					"top": 724,
+					"left": 34,
+					"width": 100,
+					"height": 17,
+					"sizingY": "move"
+				},
+				"field_Name": {
+					"type": "input",
+					"dataSource": "[Templates4DWP:5]Name:2",
+					"top": 724,
+					"left": 144,
+					"width": 250,
+					"height": 17,
+					"sizingY": "move"
+				},
+				"Button": {
+					"type": "button",
+					"top": 724,
+					"left": 750,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"Button1": {
+					"type": "button",
+					"top": 724,
+					"left": 830,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "saut section continu",
+					"top": 201,
+					"left": 1927,
+					"width": 158,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Popup Liste déroulante": {
+					"type": "dropdown",
+					"left": 1927,
+					"top": 241,
+					"width": 150,
+					"height": 21,
+					"events": [
+						"onDataChange"
+					],
+					"action": "section/columnCount",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"WParea": {
+					"type": "write",
+					"top": 114,
+					"left": 20,
+					"width": 880,
+					"height": 590,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.wpArea",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"WPtoolbar": {
+					"type": "subform",
+					"top": 24,
+					"left": 20,
+					"width": 880,
+					"height": 90,
+					"sizingX": "grow",
+					"detailForm": "WP_Toolbar",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Btn_Test": {
+					"type": "button",
+					"text": "Test",
+					"top": 724,
+					"left": 494,
+					"width": 171,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
+					"focusable": false,
+					"method": "ObjectMethods/Btn_Test.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 82,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 920,
+	"height": 764,
+	"method": "method.4dm"
+}

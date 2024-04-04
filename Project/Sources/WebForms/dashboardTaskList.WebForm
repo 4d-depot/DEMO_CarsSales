@@ -1,0 +1,999 @@
+{
+  "metadata": {
+    "v": "1.0",
+    "datasources": [
+      {
+        "id": "todayTasks",
+        "from": "",
+        "dataclass": "Reservation",
+        "dataType": "",
+        "type": "entitysel",
+        "initialValue": "",
+        "events": []
+      }
+    ],
+    "styles": [
+      {
+        "name": "matrixStyleBox",
+        "content": "self {\n  border-bottom-width : 1px;\n  display : flex;\n  border-bottom-color : #e7e7e7;\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "40-GGghUI",
+        "id": "qX0UBR-2kAp0N9WLBxMVl"
+      },
+      {
+        "name": "panelTitle",
+        "content": "self {\n  font-size : 25px;\n  display : flex;\n  color : #1f89fe;\n  font-weight : 700;\n  font-family : Helvetica;\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "rwTiVuK1n",
+        "id": "s7Mmk20c8ZLSaowfrjSYZ"
+      },
+      {
+        "name": "labelblue",
+        "content": "self {\n  font-size : 12px;\n  border-radius : 10px;\n  background-color : #1f89fe;\n  color : #ffffff;\n  display : flex;\n  align-items : center;\n  justify-content : center;\n  padding-top : 4px;\n  padding-right : 8px;\n  padding-bottom : 4px;\n  padding-left : 8px;\n  margin-right : 10px;\n  height: 30px\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "otqQPQA7f",
+        "id": "8bBioBMxEQg5qKqqLlK-6"
+      }
+    ]
+  },
+  "components": {
+    "ROOT": {
+      "type": {
+        "resolvedName": "Container"
+      },
+      "isCanvas": true,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "style": {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "alignItems": "start",
+          "fontFamily": "Helvetica",
+          "width": "100%",
+          "backgroundColor": "transparent",
+          "height": "100%",
+          "fontSize": "14px"
+        },
+        "isInsideCanvas": false
+      },
+      "displayName": "Webform",
+      "custom": {},
+      "hidden": false,
+      "nodes": [
+        "dm3XTZn0v"
+      ],
+      "linkedNodes": {}
+    },
+    "SGFjpQolj2": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "borderTopWidth": "0px",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "stretch",
+          "height": "100%"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "dm3XTZn0v",
+      "hidden": false,
+      "nodes": [
+        "CSHtBFGddm"
+      ],
+      "linkedNodes": {}
+    },
+    "CSHtBFGddm": {
+      "type": {
+        "resolvedName": "Matrix"
+      },
+      "isCanvas": false,
+      "props": {
+        "iterable": true,
+        "classNames": [],
+        "events": [
+          {
+            "events": [
+              "onselect"
+            ],
+            "id": "oViUqgxvh2vwoo8RCLAr7H",
+            "type": "navigation",
+            "loader": "",
+            "parent": "webform-loader-self",
+            "target": "dashboardTaskDet"
+          }
+        ],
+        "style": {
+          "width": "100%",
+          "overflow": "hidden",
+          "display": "flex",
+          "alignItems": "stretch",
+          "height": "700px"
+        },
+        "orientation": "vertical",
+        "datasource": "session:selectedAgency.todayBookings",
+        "currentElement": "emplDashboard:task",
+        "serverSideRef": "bookingMatrix",
+        "gridProps": {
+          "styleboxWidth": 999,
+          "styleboxHeight": 70,
+          "enableMosaic": false,
+          "enableFlex": false,
+          "flexProps": {
+            "nbOfRows": 10,
+            "nbOfColumns": 1
+          }
+        }
+      },
+      "displayName": "Matrix",
+      "custom": {},
+      "parent": "SGFjpQolj2",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {
+        "container": "4NCn7JYzhy"
+      }
+    },
+    "4NCn7JYzhy": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "70px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "flex-start",
+          "flexDirection": "row"
+        },
+        "hidden": false,
+        "classNames": [
+          "matrixStyleBox"
+        ],
+        "serverSideRef": "bookingItem"
+      },
+      "displayName": "Stylebox",
+      "custom": {
+        "contentHeight": 70
+      },
+      "parent": "CSHtBFGddm",
+      "hidden": false,
+      "nodes": [
+        "xMNnt3P-C",
+        "D7wiRBu7v"
+      ],
+      "linkedNodes": {}
+    },
+    "dm3XTZn0v": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "borderWidth": "0px",
+          "borderRadius": "34px",
+          "borderTopLeftRadius": "34px",
+          "borderBottomLeftRadius": "34px",
+          "display": "flex",
+          "flexDirection": "column",
+          "backgroundColor": "#ffffffff",
+          "boxShadow": "0px 0px 21px -11px rgba(0,0,0,0.75)",
+          "paddingRight": "0px",
+          "paddingLeft": "0px",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "height": "100%",
+          "width": "100%",
+          "minWidth": "360px",
+          "maxWidth": "1000px"
+        },
+        "serverSideRef": "bookingList"
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "ROOT",
+      "hidden": false,
+      "nodes": [
+        "c6NyQBuNj0",
+        "huVt-ix_9M",
+        "SGFjpQolj2"
+      ],
+      "linkedNodes": {}
+    },
+    "c6NyQBuNj0": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "50px",
+          "display": "flex",
+          "alignItems": "center",
+          "paddingLeft": "15px",
+          "paddingRight": "15px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "dm3XTZn0v",
+      "hidden": false,
+      "nodes": [
+        "_O541vxJEs",
+        "Z0d_qfOaNZ"
+      ],
+      "linkedNodes": {}
+    },
+    "_O541vxJEs": {
+      "type": {
+        "resolvedName": "Icon"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "2jDgwnwhKsLB7JyHQmFFF2",
+            "type": "navigation",
+            "loader": "",
+            "parent": "webform-loader-self",
+            "target": "selectAgency"
+          }
+        ],
+        "icon": "fa-arrow-left",
+        "style": {
+          "fontSize": "22px",
+          "marginRight": "5px",
+          "color": "#1f89fe",
+          "cursor": "pointer"
+        }
+      },
+      "displayName": "Icon",
+      "custom": {},
+      "parent": "c6NyQBuNj0",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Z0d_qfOaNZ": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Tasks of the day",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Tasks of the day</p>",
+        "classNames": [
+          "panelTitle"
+        ]
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "c6NyQBuNj0",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "huVt-ix_9M": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "paddingLeft": "15px",
+          "paddingRight": "15px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "dm3XTZn0v",
+      "hidden": false,
+      "nodes": [
+        "uTMFVhKz4"
+      ],
+      "linkedNodes": {}
+    },
+    "uTMFVhKz4": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "session:selectedAgency.name,session:selectedAgency.todayBookingsQty",
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Your agency ",
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              },
+              {
+                "type": "datasource",
+                "datasource": "session:selectedAgency.name",
+                "children": [
+                  {
+                    "text": "(session) Agency name",
+                    "isDataSource": true,
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "text": " "
+              },
+              {
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": "has "
+              },
+              {
+                "type": "datasource",
+                "datasource": "session:selectedAgency.todayBookingsQty",
+                "children": [
+                  {
+                    "isDataSource": true,
+                    "text": "999",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "text": " "
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": "tasks today"
+              }
+            ]
+          }
+        ],
+        "text": "<p>Your agency <b>session:selectedAgency.name</b> has <b>session:selectedAgency.todayBookingsQty</b> tasks today</p>"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "huVt-ix_9M",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "xMNnt3P-C": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "64px",
+          "height": "64px",
+          "paddingTop": "4px",
+          "paddingRight": "4px",
+          "paddingBottom": "4px",
+          "paddingLeft": "4px",
+          "display": "flex",
+          "justifyContent": "center",
+          "alignItems": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "4NCn7JYzhy",
+      "hidden": false,
+      "nodes": [
+        "HsyX-5M-v9"
+      ],
+      "linkedNodes": {}
+    },
+    "HsyX-5M-v9": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "style": {
+          "height": "50px",
+          "width": "50px",
+          "borderRadius": "50px"
+        },
+        "datasource": "$This.employee.photo"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "xMNnt3P-C",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "D7wiRBu7v": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "paddingTop": "4px",
+          "paddingRight": "4px",
+          "paddingBottom": "4px",
+          "paddingLeft": "4px",
+          "display": "flex",
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "flex-start"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "4NCn7JYzhy",
+      "hidden": false,
+      "nodes": [
+        "0hRdG7hRJk",
+        "J7K-NlBXO"
+      ],
+      "linkedNodes": {}
+    },
+    "J7K-NlBXO": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "paddingTop": "4px",
+          "paddingRight": "4px",
+          "paddingBottom": "4px",
+          "paddingLeft": "4px",
+          "justifyContent": "flex-end",
+          "width": "auto"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "D7wiRBu7v",
+      "hidden": false,
+      "nodes": [
+        "otqQPQA7f",
+        "9B0idFWE7",
+        "0HPspVsaB",
+        "IjpB9PUWz",
+        "bicnhNirJ"
+      ],
+      "linkedNodes": {}
+    },
+    "otqQPQA7f": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "80px"
+        },
+        "classNames": [
+          "labelblue"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "J7K-NlBXO",
+      "hidden": false,
+      "nodes": [
+        "UvKfo_EmO"
+      ],
+      "linkedNodes": {}
+    },
+    "0HPspVsaB": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "80px"
+        },
+        "classNames": [
+          "labelblue"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "J7K-NlBXO",
+      "hidden": false,
+      "nodes": [
+        "QprhzC-omx"
+      ],
+      "linkedNodes": {}
+    },
+    "QprhzC-omx": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "$This.todayTaskType",
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "$This.todayTaskType",
+                "children": [
+                  {
+                    "text": "Departure",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>emplDashboard:task.todayTaskType</p>"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "0HPspVsaB",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "IjpB9PUWz": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "60px",
+          "display": "flex",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "height": "30px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "J7K-NlBXO",
+      "hidden": false,
+      "nodes": [
+        "_JJ4GllOR",
+        "zEG3KV1Bt"
+      ],
+      "linkedNodes": {}
+    },
+    "_JJ4GllOR": {
+      "type": {
+        "resolvedName": "Icon"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "icon": "fa-refresh",
+        "style": {
+          "paddingRight": "4px"
+        }
+      },
+      "displayName": "Icon",
+      "custom": {},
+      "parent": "IjpB9PUWz",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "zEG3KV1Bt": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "$This.alternatives.length",
+        "style": {
+          "height": "21px",
+          "width": "30px"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "$This.alternatives.length",
+                "children": [
+                  {
+                    "text": "99",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "IjpB9PUWz",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "UvKfo_EmO": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "$This.ID",
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "$This.ID",
+                "children": [
+                  {
+                    "text": "999999",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>emplDashboard:task.ID</p>"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "otqQPQA7f",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "9B0idFWE7": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "80px"
+        },
+        "classNames": [
+          "labelblue"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "J7K-NlBXO",
+      "hidden": false,
+      "nodes": [
+        "TroUFkuHC6"
+      ],
+      "linkedNodes": {}
+    },
+    "TroUFkuHC6": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "$This.todayTaskTimeS",
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "$This.todayTaskTimeS",
+                "children": [
+                  {
+                    "text": "10:00:00",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>emplDashboard:task.todayTaskTimeS</p>"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "9B0idFWE7",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "bicnhNirJ": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "60px",
+          "display": "flex",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "height": "30px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "J7K-NlBXO",
+      "hidden": false,
+      "nodes": [
+        "VMfho0Ci4j",
+        "JYECSne79i"
+      ],
+      "linkedNodes": {}
+    },
+    "VMfho0Ci4j": {
+      "type": {
+        "resolvedName": "Icon"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "icon": "fa-wrench",
+        "style": {
+          "paddingRight": "4px"
+        }
+      },
+      "displayName": "Icon",
+      "custom": {},
+      "parent": "bicnhNirJ",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "JYECSne79i": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "$This.car.defects.length",
+                "children": [
+                  {
+                    "text": "99",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>emplDashboard:task.car.defects.length</p>",
+        "datasource": "$This.car.defects.length",
+        "style": {
+          "width": "30px",
+          "height": "21px"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "bicnhNirJ",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "foDD52PQeI": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "$This.employee.fullname",
+                "children": [
+                  {
+                    "text": "Employee fullname",
+                    "bold": true,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "datasource": "$This.employee.fullname"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "0hRdG7hRJk",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "0hRdG7hRJk": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "borderWidth": "0px",
+          "paddingLeft": "4px",
+          "paddingRight": "4px",
+          "paddingBottom": "4px",
+          "paddingTop": "4px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "D7wiRBu7v",
+      "hidden": false,
+      "nodes": [
+        "foDD52PQeI"
+      ],
+      "linkedNodes": {}
+    }
+  }
+}

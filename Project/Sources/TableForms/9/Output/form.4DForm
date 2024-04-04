@@ -1,0 +1,185 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 1210
+				},
+				"label_ID": {
+					"type": "text",
+					"text": "ID",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[Reservation:9]ID:1",
+					"top": 37,
+					"left": 10,
+					"width": 100,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 130
+				},
+				"label_ID_customer": {
+					"type": "text",
+					"text": "ID_customer",
+					"top": 10,
+					"left": 135,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID_customer": {
+					"type": "input",
+					"dataSource": "[Reservation:9]ID_customer:4",
+					"top": 37,
+					"left": 135,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 390
+				},
+				"label_ID_agency": {
+					"type": "text",
+					"text": "ID_agency",
+					"top": 10,
+					"left": 395,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID_agency": {
+					"type": "input",
+					"dataSource": "[Reservation:9]ID_agency:5",
+					"top": 37,
+					"left": 395,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_9": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 676
+				},
+				"label_ID_status": {
+					"type": "text",
+					"text": "Status",
+					"top": 10,
+					"left": 681,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID_status": {
+					"type": "input",
+					"dataSource": "[Invoices:9]status:2",
+					"top": 37,
+					"left": 681,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_10": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 936
+				},
+				"label_price": {
+					"type": "text",
+					"text": "price",
+					"top": 10,
+					"left": 941,
+					"width": 100,
+					"height": 17
+				},
+				"field_price": {
+					"type": "input",
+					"dataSource": "[Reservation:9]price:14",
+					"top": 37,
+					"left": 941,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_11": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1196
+				},
+				"label_price1": {
+					"type": "text",
+					"text": "number",
+					"top": 10,
+					"left": 1211,
+					"width": 100,
+					"height": 17
+				},
+				"field_price1": {
+					"type": "input",
+					"dataSource": "[Invoices:9]number:3",
+					"top": 37,
+					"left": 1211,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1466
+				}
+			}
+		}
+	],
+	"geometryStamp": 249,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

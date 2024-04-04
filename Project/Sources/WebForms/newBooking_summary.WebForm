@@ -1,0 +1,3676 @@
+{
+  "metadata": {
+    "v": "1.0",
+    "datasources": [
+      {
+        "id": "cartTotalCost",
+        "type": "scalar",
+        "namespace": "",
+        "dataType": "number",
+        "initialValue": 0,
+        "events": []
+      },
+      {
+        "id": "bookingCost",
+        "type": "scalar",
+        "namespace": "",
+        "dataType": "number",
+        "initialValue": "0"
+      }
+    ],
+    "styles": [
+      {
+        "name": "panelText",
+        "content": "self {\n  font-size : 12px;\n  color : white;\n}",
+        "parentId": null,
+        "scope": "local",
+        "id": "HrXQ0H-sTA2byHIONRjVi"
+      },
+      {
+        "id": "wwLpQU_wJuwHJjT1qMeHj",
+        "name": "gridText",
+        "content": "self {\n  font-size : 11px;\n  color : gray\n\ttext-align: center;\n}",
+        "scope": "local",
+        "parentId": null,
+        "children": {}
+      },
+      {
+        "id": "yMpEIgRuMRHmbyvB1OiFI",
+        "name": "gridImgSmall",
+        "content": "self {\n  height : 20px;\n  display : flex;\n  justify-content : space-between;\n  align-items : stretch;\n\twidth: auto;\n}",
+        "scope": "local",
+        "parentId": null,
+        "children": {}
+      },
+      {
+        "name": "gridStyleBoxSmall",
+        "content": "self {\n  display : flex;\n  align-items : center;\n  padding : 0px;\n\tjustify-content: center;\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "EN0z5uRpM",
+        "id": "oBJzEHskni2Gx2yUY7TSn"
+      },
+      {
+        "name": "gridLabelSmall",
+        "content": "self {\n  display : flex;\n  justify-items: center;\n  align-items : center;\n  padding: 0px;\n  height: 20px;\n  text-align: center;\n\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "3XbcGO6Kk",
+        "id": "B4gvgbnzpF03MASbS6hs5"
+      },
+      {
+        "name": "fillbtn",
+        "content": "self {\n  border-top-left-radius : 20px;\n  border-bottom-left-radius : 20px;\n  width : fit-content;\n  font-weight : 500;\n  display : flex;\n  align-items : center;\n  font-size : 18px;\n  padding-left : 15px;\n  padding-right : 0px;\n  border-radius : 20px;\n  padding-bottom : 0px;\n  padding-top : 0px;\n  gap : 15px;\n  cursor : pointer;\n\ttransition: all  0.35s cubic-bezier(1.000, 0.000, 0.000, 1.000);\n\tbackground: linear-gradient(to left, #ffffffff 50%, #1f89fe 50%);\n  background-size: 200% 100%;\n  background-position:right bottom;\n}\n\nself:hover {\n  color: white;\n\tbackground-position:left bottom;\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "_bJZppLAWe",
+        "id": "1XLNhwAsHYsUuRybiNebB"
+      }
+    ]
+  },
+  "components": {
+    "ROOT": {
+      "type": {
+        "resolvedName": "Container"
+      },
+      "isCanvas": true,
+      "props": {
+        "classNames": [],
+        "events": [
+          {
+            "events": [
+              "onload"
+            ],
+            "id": "cY8RhsQ5JK7TVY7apJNUbz",
+            "method": "ds.Utilities.returnValue",
+            "dataclass": "Utilities",
+            "params": [
+              {
+                "name": "$variant",
+                "type": "Variant",
+                "datasource": "",
+                "id": "5jQXZJnHppjPzZSHneAF62",
+                "isHardCoded": true,
+                "hardCodedValue": "7"
+              }
+            ],
+            "type": "method",
+            "returns": {
+              "name": "$0",
+              "type": "Variable",
+              "datasource": "newBooking:stepID"
+            }
+          },
+          {
+            "events": [
+              "onload"
+            ],
+            "id": "iVUpmkeowSTKeHgdJpjDZj",
+            "method": "optionCart.totalCost",
+            "dataclass": "OptionAvailableSelection",
+            "params": [],
+            "type": "method",
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable",
+              "datasource": "cartTotalCost"
+            }
+          },
+          {
+            "events": [
+              "onload"
+            ],
+            "id": "5qVt3RwVDycRkiMLGAHukP",
+            "method": "reservation.bookingEstimateWOptions",
+            "dataclass": "ReservationEntity",
+            "params": [
+              {
+                "name": "optPrice",
+                "type": "Real",
+                "datasource": "cartTotalCost",
+                "id": "5bC9JxHzLEifvUkAVCx6jU"
+              }
+            ],
+            "type": "method",
+            "feedback": false,
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable",
+              "datasource": "bookingCost"
+            }
+          }
+        ],
+        "className": "bg-white min-h-full w-full px-8",
+        "style": {
+          "backgroundColor": "transparent",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "start",
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+          "fontSize": "13px"
+        },
+        "isInsideCanvas": false,
+        "airyMode": false
+      },
+      "displayName": "Webform",
+      "custom": {},
+      "hidden": false,
+      "nodes": [
+        "Q7hc_bawH"
+      ],
+      "linkedNodes": {}
+    },
+    "Q7hc_bawH": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "backgroundColor": "#ffffffff",
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+          "display": "flex",
+          "alignItems": "center",
+          "flexDirection": "column",
+          "justifyContent": "space-between"
+        },
+        "classNames": [],
+        "serverSideRef": "foundCarsStyleBox"
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "ROOT",
+      "hidden": false,
+      "nodes": [
+        "Gm-ZY8FsZ",
+        "jCgAm-mlO",
+        "eQFFZ9ehU",
+        "M901qUCSTn"
+      ],
+      "linkedNodes": {}
+    },
+    "UwvziT2F8": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {
+          "fontSize": "34px",
+          "color": "#14395B"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.brand",
+                "children": [
+                  {
+                    "text": "Brand",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>car.model.brand </p>",
+        "datasource": "newBooking:reservation.car.model.brand",
+        "classNames": []
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "5m0294ew8",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "zbowbJl1O": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {
+          "fontSize": "11px",
+          "fontWeight": "300",
+          "color": "#14395B"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.category.label",
+                "children": [
+                  {
+                    "text": "Category",
+                    "italic": true,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p><em>car.model.category.label</em></p>",
+        "datasource": "newBooking:reservation.car.model.category.label",
+        "classNames": []
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "5m0294ew8",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "5m0294ew8": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "alignItems": "start",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "position": "relative",
+          "flexDirection": "column",
+          "width": "fit-content"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "NlwCDJpvi",
+      "hidden": false,
+      "nodes": [
+        "UwvziT2F8",
+        "hgY5aIikN",
+        "zbowbJl1O",
+        "LP-0rmF61"
+      ],
+      "linkedNodes": {}
+    },
+    "NlwCDJpvi": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "start",
+          "paddingTop": "0px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "CIzTCqWDe",
+      "hidden": false,
+      "nodes": [
+        "5m0294ew8"
+      ],
+      "linkedNodes": {}
+    },
+    "hgY5aIikN": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {
+          "fontSize": "20px",
+          "color": "#14395B"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.model",
+                "children": [
+                  {
+                    "bold": true,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "text": "Model",
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p><b>car.model.model</b></p>",
+        "datasource": "newBooking:reservation.car.model.model",
+        "classNames": [
+          "panelText"
+        ]
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "5m0294ew8",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "LhFclpOtd": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "g_J_Q6Vxs",
+      "hidden": false,
+      "nodes": [
+        "byo0gtT7UK",
+        "FaDA08GI7i"
+      ],
+      "linkedNodes": {}
+    },
+    "LP-0rmF61": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "color": "#14395B"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.registration",
+                "children": [
+                  {
+                    "text": "XX-1234-YY",
+                    "italic": true,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p><em>car.registration</em></p>",
+        "datasource": "newBooking:reservation.car.registration",
+        "classNames": []
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "5m0294ew8",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Gm-ZY8FsZ": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "97%",
+          "height": "80px",
+          "marginTop": "10px",
+          "paddingLeft": "15px",
+          "paddingRight": "15px",
+          "display": "flex",
+          "alignItems": "center",
+          "flexDirection": "row"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Q7hc_bawH",
+      "hidden": false,
+      "nodes": [
+        "6dGGmIu0J",
+        "63hE6392n"
+      ],
+      "linkedNodes": {}
+    },
+    "6dGGmIu0J": {
+      "type": {
+        "resolvedName": "Icon"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "icon": "fa-check-square",
+        "style": {
+          "fontSize": "20px",
+          "color": "#1f89fe",
+          "marginRight": "18px"
+        }
+      },
+      "displayName": "Icon",
+      "custom": {},
+      "parent": "Gm-ZY8FsZ",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "63hE6392n": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "color": "#1f89fe",
+          "fontFamily": "Helvetica",
+          "fontWeight": "700"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": "Confirm your booking"
+              }
+            ]
+          }
+        ],
+        "text": "<p>Confirm your booking</p>"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "Gm-ZY8FsZ",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "l_h46b8BU4": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "style": {
+          "height": "100%",
+          "width": "300px"
+        },
+        "datasource": "newBooking:reservation.car.model.photo"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "IYSsmPTmF",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "g_J_Q6Vxs": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "start",
+          "justifyContent": "space-between",
+          "borderWidth": "1px",
+          "borderRadius": "10px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "wbi15xt9Pa",
+      "hidden": false,
+      "nodes": [
+        "CIzTCqWDe",
+        "LhFclpOtd"
+      ],
+      "linkedNodes": {}
+    },
+    "CIzTCqWDe": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "197px",
+          "display": "flex",
+          "flexDirection": "row",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "justifyContent": "flex-start"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "g_J_Q6Vxs",
+      "hidden": false,
+      "nodes": [
+        "NlwCDJpvi",
+        "IYSsmPTmF"
+      ],
+      "linkedNodes": {}
+    },
+    "IYSsmPTmF": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "marginLeft": "-350px",
+          "paddingTop": "8px",
+          "paddingRight": "8px",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "marginBottom": "0px",
+          "display": "flex",
+          "justifyContent": "flex-end",
+          "alignItems": "center",
+          "width": "fit-content"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "CIzTCqWDe",
+      "hidden": false,
+      "nodes": [
+        "l_h46b8BU4"
+      ],
+      "linkedNodes": {}
+    },
+    "jCgAm-mlO": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "paddingBottom": "0px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Q7hc_bawH",
+      "hidden": false,
+      "nodes": [
+        "sLQnCIwblr",
+        "mKYke02mto"
+      ],
+      "linkedNodes": {}
+    },
+    "eQFFZ9ehU": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "paddingBottom": "0px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Q7hc_bawH",
+      "hidden": false,
+      "nodes": [
+        "SkJbIzTpdZ",
+        "wbi15xt9Pa"
+      ],
+      "linkedNodes": {}
+    },
+    "sLQnCIwblr": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Travel details",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Vehicle &amp; options</p>",
+        "style": {
+          "color": "#1f89fe"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "jCgAm-mlO",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "wbi15xt9Pa": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "gap": "10px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "eQFFZ9ehU",
+      "hidden": false,
+      "nodes": [
+        "g_J_Q6Vxs",
+        "T5L_DMAiI"
+      ],
+      "linkedNodes": {}
+    },
+    "IiY1hxoHsY": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Customer",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Customer</p>",
+        "style": {}
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "EeW-tiTcj_",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "T5L_DMAiI": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "alignItems": "start",
+          "justifyContent": "space-between",
+          "width": "300px",
+          "borderWidth": "1px",
+          "flexDirection": "column",
+          "borderRadius": "10px",
+          "maxWidth": "300px",
+          "minWidth": "300px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "wbi15xt9Pa",
+      "hidden": false,
+      "nodes": [
+        "DquD3sa3jJ",
+        "HE7EsEh2_",
+        "jzme713BH_"
+      ],
+      "linkedNodes": {}
+    },
+    "HE7EsEh2_": {
+      "type": {
+        "resolvedName": "Matrix"
+      },
+      "isCanvas": false,
+      "props": {
+        "iterable": true,
+        "classNames": [],
+        "events": [],
+        "style": {
+          "height": "250px",
+          "borderWidth": "0px"
+        },
+        "orientation": "vertical",
+        "datasource": "newBooking:optionCart",
+        "currentElement": "",
+        "gridProps": {
+          "styleboxWidth": 274,
+          "styleboxHeight": 40,
+          "enableMosaic": false,
+          "enableFlex": false,
+          "flexProps": {
+            "nbOfRows": 6,
+            "nbOfColumns": 1
+          }
+        }
+      },
+      "displayName": "Matrix",
+      "custom": {},
+      "parent": "T5L_DMAiI",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {
+        "container": "uRq03L6NZ"
+      }
+    },
+    "uRq03L6NZ": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "40px",
+          "display": "flex",
+          "alignItems": "center"
+        },
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {
+        "contentHeight": 40
+      },
+      "parent": "HE7EsEh2_",
+      "hidden": false,
+      "nodes": [
+        "zV4AeKtCF",
+        "hDr5tAGpu"
+      ],
+      "linkedNodes": {}
+    },
+    "zV4AeKtCF": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "style": {
+          "height": "30px",
+          "width": "30px",
+          "borderRadius": "999px"
+        },
+        "datasource": "$This.photo"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "uRq03L6NZ",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "hDr5tAGpu": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "$This.label",
+        "style": {
+          "fontSize": "12px",
+          "marginLeft": "10px"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "$This.label",
+                "children": [
+                  {
+                    "text": "Option label"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>opt.label </p>"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "uRq03L6NZ",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "jhGYIpYoc": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "newBooking:reservation.customer.fullname",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.customer.fullname",
+                "children": [
+                  {
+                    "text": "Customer full name",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>customer.fullname</p>",
+        "style": {}
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "EeW-tiTcj_",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "0UVfud34S": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "fontFamily": "Helvetica",
+          "width": "auto",
+          "paddingTop": "5px",
+          "paddingRight": "5px",
+          "paddingBottom": "5px",
+          "paddingLeft": "5px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "5DoWubQy4d",
+      "hidden": false,
+      "nodes": [
+        "O-SjBoisU",
+        "OoEOrqY9I",
+        "Y-CP9Xijn",
+        "2a2Q4o4s_"
+      ],
+      "linkedNodes": {}
+    },
+    "O-SjBoisU": {
+      "type": {
+        "resolvedName": "Icon"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "icon": "fa-sign-out",
+        "style": {
+          "color": "#1f89fe",
+          "fontSize": "22px",
+          "marginRight": "10px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingTop": "0px"
+        }
+      },
+      "displayName": "Icon",
+      "custom": {},
+      "parent": "0UVfud34S",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "OoEOrqY9I": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "newBooking:reservation.departureAgency.name",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.departureAgency.name",
+                "children": [
+                  {
+                    "text": "Aéroport CLERMONT-FERRAND-CLERMONT FERRAND/AUVERGNE",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ],
+                "dsType": "",
+                "format": ""
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>agencyDep.name</p>",
+        "style": {
+          "marginRight": "10px",
+          "textAlign": "left",
+          "width": "230px"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "0UVfud34S",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Y-CP9Xijn": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "newBooking:reservation.departureDate",
+        "style": {
+          "marginRight": "10px"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.departureDate",
+                "children": [
+                  {
+                    "text": "19/09/1980",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ],
+                "dsType": "date",
+                "format": "dd/MM/yyyy"
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>depDate</p>",
+        "format": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "0UVfud34S",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "2a2Q4o4s_": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "newBooking:reservation.departureTimeString",
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.departureTimeString",
+                "children": [
+                  {
+                    "text": "10:00",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>depTime</p>",
+        "format": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "0UVfud34S",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Ti8V-7a4r": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "fontFamily": "Helvetica",
+          "width": "auto",
+          "paddingTop": "5px",
+          "paddingRight": "5px",
+          "paddingBottom": "5px",
+          "paddingLeft": "5px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "5DoWubQy4d",
+      "hidden": false,
+      "nodes": [
+        "JfFhogod2I",
+        "AuemVltYJG",
+        "9km9km7DPY",
+        "ffIza3KtFj"
+      ],
+      "linkedNodes": {}
+    },
+    "JfFhogod2I": {
+      "type": {
+        "resolvedName": "Icon"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "icon": "fa-sign-in",
+        "style": {
+          "color": "#1f89fe",
+          "fontSize": "22px",
+          "marginRight": "10px"
+        }
+      },
+      "displayName": "Icon",
+      "custom": {},
+      "parent": "Ti8V-7a4r",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "AuemVltYJG": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "newBooking:reservation.arrivalAgency.name",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.arrivalAgency.name",
+                "children": [
+                  {
+                    "text": "Aéroport AJACCIO-NAPOLEON-BONAPARTE",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>agencyArr.name</p>",
+        "style": {
+          "marginRight": "10px",
+          "textAlign": "left",
+          "width": "230px"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "Ti8V-7a4r",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "9km9km7DPY": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "newBooking:reservation.arrivalDate",
+        "style": {
+          "marginRight": "10px"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.arrivalDate",
+                "children": [
+                  {
+                    "text": "23/09/1980",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ],
+                "dsType": "date",
+                "format": "dd/MM/yyyy"
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>arrDate</p>",
+        "format": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "Ti8V-7a4r",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "ffIza3KtFj": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "newBooking:reservation.arrivalTimeString",
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.arrivalTimeString",
+                "children": [
+                  {
+                    "text": "18:00",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>arrTime</p>",
+        "format": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "Ti8V-7a4r",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "byo0gtT7UK": {
+      "type": {
+        "resolvedName": "Grid"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "rows": [
+          {
+            "height": "20px",
+            "id": "irm47TPewRXHxArsXiEJjS"
+          },
+          {
+            "height": "20px",
+            "id": "oNJ9jWe58Eki1qWEBgNRqS"
+          },
+          {
+            "height": "20px",
+            "id": "qavKaPw1bDGRiuSYi5cz7A"
+          },
+          {
+            "height": "20px",
+            "id": "9Z7J4dYwPgnpaF2Wr9wHBd"
+          },
+          {
+            "height": "20px",
+            "id": "dokdbw2fU9LGf99N1CToXr"
+          }
+        ],
+        "columns": [
+          {
+            "width": "35px",
+            "id": "caRWuGwNRAuQxgTJ6NXvBL"
+          },
+          {
+            "width": "100px",
+            "id": "vAj62GzxsyfzRNd3maCEYm"
+          },
+          {
+            "width": "35px",
+            "id": "pfLLSzD5kenTGGYeRDLo85"
+          },
+          {
+            "width": "100px",
+            "id": "sNezJMyM7Ef7NXbz1qdKcj"
+          }
+        ],
+        "areas": [
+          {
+            "colSpan": 0,
+            "colStart": 0,
+            "rowSpan": 0,
+            "rowStart": 0,
+            "id": "o57ZpmyDXvBzmZ763k5c2R"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "28SxckjKXSSVde9yVgNdY8"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "bV9htZE5aSbX6ZLBWshR6Y"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "4tyvXEywqUhWVRMFEAgQk2"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "42hR8etMAwA49deT1baneM"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "sqJK2udQW13NDzdf1oYfj3"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "9rwoELdzoaE8bywYp7Qbes"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "2ChHexhLUWV4MzVcSCLqcZ"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "7YNgXMwfTo5Rqnz81ttuDW"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "vJ931coTJhk7UxYSSssSN8"
+          },
+          {
+            "colSpan": 0,
+            "colStart": 0,
+            "rowSpan": 0,
+            "rowStart": 0,
+            "id": "unirJXnarTgLbiuofu19ZN"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "1sZd45sZr3WYLPyhBCR9em"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "pwkbSDZgWSrFtG1iSwaQD2"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "2mtU2AXPmSmy4Zi7f5JcYr"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "eSfDC9SppKywC1tg5DMH2T"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "4HpNfgwSy7eQ9P1jKFufQj"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "pGth7Nnd5JoDMCHXmCPKmJ"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "bU7wBaSWvwRX7areM9b49W"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "5kphRRKwGNPo2y7avG5coZ"
+          },
+          {
+            "colStart": "",
+            "colSpan": "",
+            "rowStart": "",
+            "rowSpan": "",
+            "id": "mPHQV3BXm37YvBGqT6hHCu"
+          }
+        ],
+        "rowGap": "10px",
+        "colGap": "10px",
+        "style": {
+          "overflow": "hidden",
+          "fontSize": "10px"
+        }
+      },
+      "displayName": "Grid",
+      "custom": {},
+      "parent": "LhFclpOtd",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {
+        "o57ZpmyDXvBzmZ763k5c2R": "AeWMSxEA-w",
+        "28SxckjKXSSVde9yVgNdY8": "bZQIHnAKtW",
+        "bV9htZE5aSbX6ZLBWshR6Y": "BiZoVSZ0OL",
+        "4tyvXEywqUhWVRMFEAgQk2": "mu2Gbx3gn8",
+        "42hR8etMAwA49deT1baneM": "t6qh1kympZ",
+        "sqJK2udQW13NDzdf1oYfj3": "VpedDJX38A",
+        "9rwoELdzoaE8bywYp7Qbes": "dSvZcEDEKo",
+        "2ChHexhLUWV4MzVcSCLqcZ": "1rQabPzp8N",
+        "7YNgXMwfTo5Rqnz81ttuDW": "mrWNU9g6oj",
+        "vJ931coTJhk7UxYSSssSN8": "A7pFdhwJv9",
+        "sBew9VQZx8iRXrcxXgBDEm": "tcEzcnxnWn",
+        "unirJXnarTgLbiuofu19ZN": "NyxyAWRKW_",
+        "1sZd45sZr3WYLPyhBCR9em": "KYqpSkPpc-",
+        "pwkbSDZgWSrFtG1iSwaQD2": "BKDp8RFwWe",
+        "2mtU2AXPmSmy4Zi7f5JcYr": "N3Fozza0cu",
+        "eSfDC9SppKywC1tg5DMH2T": "4nGn6QELUz",
+        "4HpNfgwSy7eQ9P1jKFufQj": "jpRK_2WS4W",
+        "pGth7Nnd5JoDMCHXmCPKmJ": "YdsQWsXrEd",
+        "bU7wBaSWvwRX7areM9b49W": "UCes1w5e4W",
+        "5kphRRKwGNPo2y7avG5coZ": "DrDAnnCVPe",
+        "mPHQV3BXm37YvBGqT6hHCu": "37Cq6BWMOU",
+        "mfqtaHmbLrJQ6VFz8ezw9L": "yiOliBsytc",
+        "pSuHX4sZxaDZKBUF2HaFtt": "eb2LW8KJb5",
+        "aiWuaQkcFH37EhnWJtDzDm": "Yl7SZYKpNJ",
+        "6VRUc58KhB8xLaHi2deLsr": "Vc-I_sYb-J"
+      }
+    },
+    "AeWMSxEA-w": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {
+          "display": "flex",
+          "justifyContent": "center"
+        },
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "ccoLXK-Dqr"
+      ],
+      "linkedNodes": {}
+    },
+    "ccoLXK-Dqr": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://static.thenounproject.com/png/497872-200.png"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "AeWMSxEA-w",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "bZQIHnAKtW": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "hidden": false,
+        "style": {}
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "weq070MOVt"
+      ],
+      "linkedNodes": {}
+    },
+    "weq070MOVt": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.fuel",
+                "children": [
+                  {
+                    "text": "FUEL",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>newBooking:car.model.fuel</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.fuel"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "bZQIHnAKtW",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "BiZoVSZ0OL": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false,
+        "style": {
+          "display": "flex",
+          "alignItems": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "vJn43yh_8f"
+      ],
+      "linkedNodes": {}
+    },
+    "vJn43yh_8f": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://icon-library.com/images/gps-icon-free/gps-icon-free-9.jpg"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "BiZoVSZ0OL",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "mu2Gbx3gn8": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "hidden": false,
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "bwmgWu9PaX"
+      ],
+      "linkedNodes": {}
+    },
+    "bwmgWu9PaX": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.GPS",
+                "children": [
+                  {
+                    "text": "GPS",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>carsItem.model.GPS</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.GPS"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "mu2Gbx3gn8",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "t6qh1kympZ": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false,
+        "style": {}
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "E-HOx1_wN4"
+      ],
+      "linkedNodes": {}
+    },
+    "E-HOx1_wN4": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://img.icons8.com/ios/452/wheel.png"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "t6qh1kympZ",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "VpedDJX38A": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "hidden": false,
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "bB_SYfMYVe"
+      ],
+      "linkedNodes": {}
+    },
+    "bB_SYfMYVe": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.tires",
+                "children": [
+                  {
+                    "text": "TIRES",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>carsItem.tires</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.tires"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "VpedDJX38A",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "dSvZcEDEKo": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false,
+        "style": {}
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "6SOZtw5nYC"
+      ],
+      "linkedNodes": {}
+    },
+    "6SOZtw5nYC": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://static.thenounproject.com/png/3512274-200.png"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "dSvZcEDEKo",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "1rQabPzp8N": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "hidden": false,
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "YpqfmvJ0yh"
+      ],
+      "linkedNodes": {}
+    },
+    "YpqfmvJ0yh": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.trunkCapacity",
+                "children": [
+                  {
+                    "text": "TCAPA",
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ],
+                "dsType": "word",
+                "format": ""
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " L"
+              }
+            ]
+          }
+        ],
+        "text": "<p>carsItem.model.trunk_capacity L</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.trunkCapacity"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "1rQabPzp8N",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "mrWNU9g6oj": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false,
+        "style": {}
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "ISJMJqkMpU"
+      ],
+      "linkedNodes": {}
+    },
+    "ISJMJqkMpU": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://img.icons8.com/ios/452/full-tank.png"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "mrWNU9g6oj",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "A7pFdhwJv9": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "hidden": false,
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "gNc5OZbq9U"
+      ],
+      "linkedNodes": {}
+    },
+    "gNc5OZbq9U": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.tankCapacity",
+                "children": [
+                  {
+                    "text": "CAPA",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ],
+                "dsType": "word",
+                "format": ""
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " L"
+              }
+            ]
+          }
+        ],
+        "text": "<p>carsItem.model.tank_capacity L</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.tankCapacity"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "A7pFdhwJv9",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "tcEzcnxnWn": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full"
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "NyxyAWRKW_": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {},
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "intWXnaNVl"
+      ],
+      "linkedNodes": {}
+    },
+    "intWXnaNVl": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://icon-library.com/images/engine-icon-png/engine-icon-png-12.jpg"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "NyxyAWRKW_",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "KYqpSkPpc-": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        },
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "9KQ1-CK3Qv"
+      ],
+      "linkedNodes": {}
+    },
+    "9KQ1-CK3Qv": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.power",
+                "children": [
+                  {
+                    "text": "HPOW",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " HP"
+              }
+            ]
+          }
+        ],
+        "text": "<p>carsItem.model.power HP</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.power"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "KYqpSkPpc-",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "BKDp8RFwWe": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {},
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "DXE3LsU3cD"
+      ],
+      "linkedNodes": {}
+    },
+    "DXE3LsU3cD": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://icon-library.com/images/seat-icon/seat-icon-5.jpg"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "BKDp8RFwWe",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "N3Fozza0cu": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        },
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "coPRzCupvv"
+      ],
+      "linkedNodes": {}
+    },
+    "coPRzCupvv": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.numberSeats",
+                "children": [
+                  {
+                    "text": "7",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ],
+                "dsType": "word",
+                "format": ""
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " Seats"
+              }
+            ]
+          }
+        ],
+        "text": "<p>carsItem.model.number_seats Seats</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.numberSeats"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "N3Fozza0cu",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "4nGn6QELUz": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {},
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "StxepBc1u7"
+      ],
+      "linkedNodes": {}
+    },
+    "StxepBc1u7": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://icon-library.com/images/car-door-icon/car-door-icon-14.jpg"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "4nGn6QELUz",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "jpRK_2WS4W": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        },
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "8OVfqSUBMI"
+      ],
+      "linkedNodes": {}
+    },
+    "8OVfqSUBMI": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.numberDoors",
+                "children": [
+                  {
+                    "text": "7",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ],
+                "dsType": "word",
+                "format": ""
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " Doors"
+              }
+            ]
+          }
+        ],
+        "text": "<p>carsItem.model.number_doors Doors</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.numberDoors"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "jpRK_2WS4W",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "YdsQWsXrEd": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {},
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "-7K3uMbXkA"
+      ],
+      "linkedNodes": {}
+    },
+    "-7K3uMbXkA": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://img.icons8.com/pastel-glyph/2x/gearbox-selector.png"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "YdsQWsXrEd",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "UCes1w5e4W": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        },
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "-7iOta_oiQ"
+      ],
+      "linkedNodes": {}
+    },
+    "-7iOta_oiQ": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.gearbox",
+                "children": [
+                  {
+                    "text": "GEARB",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>newBooking:car.model.gearbox</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.gearbox"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "UCes1w5e4W",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "DrDAnnCVPe": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {},
+        "classNames": [
+          "gridStyleBoxSmall"
+        ],
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "a7wpWsmKQX"
+      ],
+      "linkedNodes": {}
+    },
+    "a7wpWsmKQX": {
+      "type": {
+        "resolvedName": "Image"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [
+          "gridImgSmall"
+        ],
+        "events": [],
+        "style": {},
+        "imgSrc": "https://static.thenounproject.com/png/2370707-200.png"
+      },
+      "displayName": "Image",
+      "custom": {},
+      "parent": "DrDAnnCVPe",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "37Cq6BWMOU": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "classNames": [
+          "gridLabelSmall"
+        ],
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-start"
+        },
+        "hidden": false
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [
+        "E5e6mjY0ab"
+      ],
+      "linkedNodes": {}
+    },
+    "E5e6mjY0ab": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "style": {},
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.model.transmission",
+                "children": [
+                  {
+                    "text": "ManAuto",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>carsItem.model.transmission</p>",
+        "classNames": [
+          "gridText"
+        ],
+        "datasource": "newBooking:reservation.car.model.transmission"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "37Cq6BWMOU",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "yiOliBsytc": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full"
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "eb2LW8KJb5": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {}
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Yl7SZYKpNJ": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {}
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Vc-I_sYb-J": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "className": "h-full",
+        "style": {}
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "byo0gtT7UK",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "DquD3sa3jJ": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Options",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "datasource": "",
+        "style": {}
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "T5L_DMAiI",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "5DoWubQy4d": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "flexDirection": "column",
+          "borderWidth": "1px",
+          "borderRadius": "10px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "mKYke02mto",
+      "hidden": false,
+      "nodes": [
+        "0UVfud34S",
+        "Ti8V-7a4r"
+      ],
+      "linkedNodes": {}
+    },
+    "EeW-tiTcj_": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "flexDirection": "column",
+          "borderWidth": "0px",
+          "borderStyle": "dotted"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "ARe3jjNJvy",
+      "hidden": false,
+      "nodes": [
+        "IiY1hxoHsY",
+        "jhGYIpYoc"
+      ],
+      "linkedNodes": {}
+    },
+    "M901qUCSTn": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "flexDirection": "row",
+          "gap": "10px",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Q7hc_bawH",
+      "hidden": false,
+      "nodes": [
+        "M_c8LiwGuz"
+      ],
+      "linkedNodes": {}
+    },
+    "M_c8LiwGuz": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-end",
+          "paddingTop": "0px",
+          "paddingRight": "12px",
+          "paddingBottom": "0px",
+          "paddingLeft": "12px",
+          "alignItems": "center",
+          "gap": "10px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "M901qUCSTn",
+      "hidden": false,
+      "nodes": [
+        "5PPQM1LLB_"
+      ],
+      "linkedNodes": {}
+    },
+    "ZMhk9LOf00": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "abkfKMn9hWnTdTCsrTxC4i",
+            "method": "reservation.saveWithOptions",
+            "dataclass": "ReservationEntity",
+            "params": [
+              {
+                "name": "options",
+                "type": "cs.OptionAvailableSelection",
+                "datasource": "newBooking:optionCart",
+                "id": "8noFi3NMiwQB87zWxTtHRz"
+              }
+            ],
+            "type": "method",
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable",
+              "datasource": "newBooking:reservation"
+            }
+          }
+        ],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "bookingCost",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "bookingCost",
+                "children": [
+                  {
+                    "text": "9999",
+                    "bold": true
+                  }
+                ],
+                "dsType": "number",
+                "format": ""
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "€",
+                "bold": true
+              }
+            ]
+          }
+        ],
+        "text": "<p>Booking cost</p>",
+        "style": {
+          "width": "fit-content"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "vsKVrU6hld",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "jzme713BH_": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-end",
+          "paddingTop": "4px",
+          "paddingRight": "4px",
+          "paddingBottom": "4px",
+          "paddingLeft": "4px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "T5L_DMAiI",
+      "hidden": false,
+      "nodes": [
+        "bWDBvhhbnK"
+      ],
+      "linkedNodes": {}
+    },
+    "bWDBvhhbnK": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "cartTotalCost",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": "Options cost"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "cartTotalCost",
+                "children": [
+                  {
+                    "bold": true,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "text": "999",
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " €"
+              }
+            ]
+          }
+        ],
+        "text": "<p><b>car.drp</b> € x <b>reservation.dayCount</b> days = <b>reservation.bookingEstimate</b> €</p> <p>Options cost = <b>cartTotalCost</b> €</p>",
+        "style": {
+          "textAlign": "right"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "jzme713BH_",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "fzdcOQd5Et": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Booking ID ",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.ID",
+                "children": [
+                  {
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "text": "999999"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "datasource": "newBooking:reservation.ID"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "5PPQM1LLB_",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "FaDA08GI7i": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "width": "fit-content",
+          "height": "100%",
+          "alignItems": "end",
+          "paddingTop": "4px",
+          "paddingRight": "4px",
+          "paddingBottom": "4px",
+          "paddingLeft": "4px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "LhFclpOtd",
+      "hidden": false,
+      "nodes": [
+        "_U6-KWgyv1"
+      ],
+      "linkedNodes": {}
+    },
+    "_U6-KWgyv1": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "newBooking:reservation.car.drp,newBooking:reservation.dayCount,newBooking:reservation.bookingEstimate",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Vehicle cost"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.drp",
+                "children": [
+                  {
+                    "text": "999",
+                    "bold": true,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " € x "
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.dayCount",
+                "children": [
+                  {
+                    "bold": true,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "text": "99",
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " days"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": "= "
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.bookingEstimate",
+                "children": [
+                  {
+                    "bold": true,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "text": "99999",
+                    "isDataSource": true
+                  }
+                ]
+              },
+              {
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "text": " €"
+              }
+            ]
+          }
+        ],
+        "text": "<p><b>car.drp</b> € x <b>reservation.dayCount</b> days = <b>reservation.bookingEstimate</b> €</p> <p>Options cost = <b>cartTotalCost</b> €</p>",
+        "style": {
+          "height": "fit-content",
+          "textAlign": "right"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "FaDA08GI7i",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "SkJbIzTpdZ": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Vehicle & options",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Vehicle &amp; options</p>",
+        "style": {
+          "color": "#1f89fe"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "eQFFZ9ehU",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "mKYke02mto": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "gap": "10px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "jCgAm-mlO",
+      "hidden": false,
+      "nodes": [
+        "5DoWubQy4d",
+        "ARe3jjNJvy"
+      ],
+      "linkedNodes": {}
+    },
+    "ARe3jjNJvy": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "300px",
+          "minWidth": "300px",
+          "maxWidth": "300px",
+          "borderWidth": "1px",
+          "borderRadius": "10px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "mKYke02mto",
+      "hidden": false,
+      "nodes": [
+        "EeW-tiTcj_"
+      ],
+      "linkedNodes": {}
+    },
+    "5PPQM1LLB_": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "justifyContent": "flex-end",
+          "backgroundColor": "#ece9e987",
+          "flexDirection": "column",
+          "alignItems": "end"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "M_c8LiwGuz",
+      "hidden": false,
+      "nodes": [
+        "_bJZppLAWe",
+        "fzdcOQd5Et"
+      ],
+      "linkedNodes": {}
+    },
+    "_bJZppLAWe": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [
+          {
+            "type": "method",
+            "dataclass": "ReservationEntity",
+            "events": [
+              "onclick"
+            ],
+            "id": "axHoRoMtedsjKyyBSx4yAU",
+            "method": "reservation.saveWithOptions",
+            "params": [
+              {
+                "name": "options",
+                "type": "cs.OptionAvailableSelection",
+                "datasource": "newBooking:optionCart",
+                "id": "u1vE8a695u48VExh11JCRT"
+              }
+            ],
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable",
+              "datasource": "newBooking:reservation"
+            },
+            "feedback": true
+          }
+        ],
+        "style": {},
+        "classNames": [
+          "fillbtn"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "5PPQM1LLB_",
+      "hidden": false,
+      "nodes": [
+        "U71A9cmcLq",
+        "vsKVrU6hld"
+      ],
+      "linkedNodes": {}
+    },
+    "vsKVrU6hld": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "borderTopRightRadius": "20px",
+          "borderBottomRightRadius": "20px",
+          "width": "fit-content",
+          "fontSize": "21px",
+          "backgroundColor": "#1f89fe",
+          "color": "#ffffffff",
+          "paddingRight": "15px",
+          "paddingLeft": "15px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "_bJZppLAWe",
+      "hidden": false,
+      "nodes": [
+        "ZMhk9LOf00"
+      ],
+      "linkedNodes": {}
+    },
+    "U71A9cmcLq": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Confirm booking",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "datasource": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "_bJZppLAWe",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+	"newBooking": [
+		{
+			"id": "gearbox",
+			"type": "scalar",
+			"namespace": "newBooking",
+			"dataType": "string",
+			"events": [],
+			"initialValue": ""
+		},
+		{
+			"id": "optionCart",
+			"type": "entitysel",
+			"dataclass": "OptionAvailable",
+			"namespace": "newBooking",
+			"depth": 0,
+			"pageSize": 100,
+			"events": [],
+			"initialValue": ""
+		},
+		{
+			"id": "stepID",
+			"type": "scalar",
+			"namespace": "newBooking",
+			"dataType": "string",
+			"initialValue": "1",
+			"events": [
+				{
+					"events": [
+						"onChange"
+					],
+					"id": "dte1WWTfscALb7NXJQpWVo",
+					"method": "ds.Utilities.updateStepper",
+					"dataclass": "Utilities",
+					"params": [
+						{
+							"name": "$stepID",
+							"type": "Text",
+							"datasource": "newBooking:stepID",
+							"id": "es7tTwj1v57GYST9egWK3e"
+						}
+					],
+					"type": "method",
+					"returns": {
+						"name": "$0",
+						"type": "Variable"
+					}
+				},
+				{
+					"events": [
+						"onChange"
+					],
+					"id": "1RsvHtuoC2CQhVxup6eVEv",
+					"type": "simple-action",
+					"datasource": {
+						"name": "reservation",
+						"type": "entity",
+						"namespace": "newBooking"
+					},
+					"action": "refresh"
+				}
+			]
+		},
+		{
+			"id": "reservation",
+			"type": "entity",
+			"dataclass": "Reservation",
+			"namespace": "newBooking",
+			"initialValue": "",
+			"depth": 10,
+			"events": []
+		}
+	],
+	"session": [
+		{
+			"id": "selectedAgency",
+			"type": "entity",
+			"dataclass": "Agency",
+			"namespace": "session",
+			"depth": null,
+			"initialValue": "",
+			"events": []
+		},
+		{
+			"id": "todaybookings",
+			"type": "entitysel",
+			"dataclass": "Reservation",
+			"from": "selectedAgency.todayBookings",
+			"namespace": "session",
+			"initialValue": "all",
+			"depth": 1,
+			"pageSize": 100,
+			"events": []
+		},
+		{
+			"id": "reservationsdeparteds",
+			"type": "entitysel",
+			"dataclass": "Reservation",
+			"from": "selectedAgency.reservationsDeparted",
+			"namespace": "session",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "user",
+			"type": "entity",
+			"dataclass": "Employee",
+			"namespace": "session",
+			"initialValue": "",
+			"depth": null
+		}
+	],
+	"emplDashboard": [
+		{
+			"id": "task",
+			"type": "entity",
+			"dataclass": "Reservation",
+			"namespace": "emplDashboard",
+			"initialValue": "",
+			"depth": 3,
+			"events": []
+		}
+	],
+	"carView": [
+		{
+			"id": "car",
+			"type": "entity",
+			"dataclass": "Car",
+			"namespace": "carView",
+			"initialValue": "",
+			"depth": null
+		}
+	],
+	"customerView": [
+		{
+			"id": "customer",
+			"type": "entity",
+			"dataclass": "Customer",
+			"namespace": "customerView",
+			"initialValue": "",
+			"depth": null
+		}
+	],
+	"bookingViewer": [
+		{
+			"id": "bookingView",
+			"type": "entity",
+			"dataclass": "Reservation",
+			"namespace": "bookingViewer",
+			"initialValue": "",
+			"depth": null
+		}
+	],
+	"S2023": [
+		{
+			"id": "sharedAgency",
+			"type": "entity",
+			"dataclass": "Agency",
+			"namespace": "S2023",
+			"initialValue": "",
+			"depth": null
+		},
+		{
+			"id": "reservations",
+			"type": "entitysel",
+			"dataclass": "Reservation",
+			"from": "sharedAgency.todayBookings",
+			"namespace": "S2023",
+			"initialValue": "",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "aReservation",
+			"type": "entity",
+			"dataclass": "Reservation",
+			"from": "reservations",
+			"namespace": "S2023",
+			"initialValue": "first",
+			"depth": null
+		},
+		{
+			"id": "currentReservation",
+			"type": "entity",
+			"dataclass": "Reservation",
+			"namespace": "S2023",
+			"initialValue": "",
+			"depth": null
+		}
+	]
+}

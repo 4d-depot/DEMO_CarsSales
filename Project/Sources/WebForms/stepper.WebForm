@@ -1,0 +1,2206 @@
+{
+  "metadata": {
+    "v": "1.0",
+    "datasources": [],
+    "styles": [
+      {
+        "id": "rfcYGNgrZZKACv8tk4D2z",
+        "name": "stepperStyleBox",
+        "content": "self {\n  display : flex;\n  flex-direction : column;\n  padding-left: 15px;\n  padding-right: 15px;\n  background-color: #1f89fe;\n}",
+        "scope": "local",
+        "parentId": null,
+        "children": {}
+      },
+      {
+        "name": "stepperStepStyleBox",
+        "content": "self {\n  height : 56px;\n  margin-bottom : 20px;\n  display: flex;\n  flex-flow:row;\n  justify-content: center;\n  align-items: center;\n  padding:0px;\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "ZcxF2rkFm",
+        "id": "AarkME2VcZvkeXACzD3X7"
+      },
+      {
+        "name": "futureStepNumber",
+        "content": "self {\n  width : 40px;\n  height : 40px;\n  font-size : 20px;\n  border-radius : 50px;\n  display : flex;\n  flex-direction : column;\n  justify-content : center;\n  align-items : center;\n  color : #ffffff;\n  background-color : #75b5ff;\n  font-weight : 700;\n  text-align : center;\n  margin-right : 0px;\n  margin-left : 0px;\n  border-color : #e73351ff;\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "UR6rDwFcSo",
+        "id": "5P92AADEOoNe5INqOfnXd"
+      },
+      {
+        "name": "pastStepNumber",
+        "content": "self {\n  width : 40px;\n  height : 40px;\n  font-size : 20px;\n  border-radius : 50px;\n  display : flex;\n  flex-direction : column;\n  justify-content : center;\n  align-items : center;\n  color : #1f89fe;\n  background-color : #ffffffff;\n  font-weight : 700;\n  text-align : center;\n  margin-right : 0px;\n  margin-left : 0px;\n  border-color : #e73351ff;\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "UVJ-Y1nRx",
+        "id": "MLZyQ-Iu_fUJlAhqh33Xw"
+      },
+      {
+        "name": "fadedTextStepper",
+        "content": "self {\n  font-size : 15px;\n  font-weight : 700;\n  font-family : Helvetica;\n  color : #74B5FF;\n}",
+        "children": {},
+        "parentId": null,
+        "scope": "local",
+        "origin": "1DhaAbctl",
+        "id": "lswlEG2xRlDW7U9yAORWj"
+      }
+    ]
+  },
+  "components": {
+    "ROOT": {
+      "type": {
+        "resolvedName": "Container"
+      },
+      "isCanvas": true,
+      "props": {
+        "classNames": [],
+        "events": [
+          {
+            "events": [
+              "onload"
+            ],
+            "id": "bYU1CLPNUko2nnAnCuLwQq",
+            "method": "ds.Reservation.getNewBooking",
+            "dataclass": "Reservation",
+            "params": [],
+            "type": "method",
+            "returns": {
+              "name": "$0",
+              "type": "Variable",
+              "datasource": "newBooking:reservation"
+            }
+          },
+          {
+            "events": [
+              "onload"
+            ],
+            "id": "pHfURuaJNnnxmy2gREsrqq",
+            "type": "simple-action",
+            "datasource": {
+              "name": "optionCart",
+              "type": "entitysel",
+              "namespace": "newBooking",
+              "from": ""
+            },
+            "action": "empty"
+          }
+        ],
+        "className": "bg-white min-h-full w-full px-8",
+        "style": {
+          "display": "flex",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "flexDirection": "column",
+          "backgroundColor": "#ffffffff"
+        }
+      },
+      "displayName": "Webform",
+      "custom": {},
+      "hidden": false,
+      "nodes": [
+        "uzvHbKogD"
+      ],
+      "linkedNodes": {}
+    },
+    "2UdhEuJSl": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "747px",
+          "borderRadius": "0px",
+          "borderTopLeftRadius": "33px",
+          "borderBottomLeftRadius": "33px",
+          "paddingTop": "12px",
+          "paddingBottom": "29px",
+          "display": "flex",
+          "flexDirection": "column",
+          "maxWidth": "330px"
+        },
+        "classNames": [
+          "stepperStyleBox"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "uzvHbKogD",
+      "hidden": false,
+      "nodes": [
+        "ZcxF2rkFm",
+        "Y--n4A3L5",
+        "16F-OxHhS",
+        "NDu1WYNoP",
+        "BGWkAwV_6",
+        "Jkc0i4UzK",
+        "zzDkY0dug",
+        "l_8HWRen3"
+      ],
+      "linkedNodes": {}
+    },
+    "UVJ-Y1nRx": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "cursor": "pointer"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "1",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>1</p>",
+        "classNames": [
+          "pastStepNumber"
+        ],
+        "serverSideRef": "circle1"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "myNHYXc4G",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "ZcxF2rkFm": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "70px",
+          "display": "flex",
+          "justifyContent": "space-between"
+        },
+        "classNames": []
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "2UdhEuJSl",
+      "hidden": false,
+      "nodes": [
+        "LOoh7gkx2"
+      ],
+      "linkedNodes": {}
+    },
+    "Y--n4A3L5": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "5hNWXKNtuDcprp3ui68KG7",
+            "type": "navigation",
+            "loader": "eavE4aT_7",
+            "parent": "webform-loader",
+            "target": "newBooking_agencyDep"
+          }
+        ],
+        "style": {},
+        "classNames": [
+          "stepperStepStyleBox"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "2UdhEuJSl",
+      "hidden": false,
+      "nodes": [
+        "myNHYXc4G",
+        "0R8zcpWKy"
+      ],
+      "linkedNodes": {}
+    },
+    "0R8zcpWKy": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "100%",
+          "paddingBottom": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "start",
+          "flexDirection": "column",
+          "justifyContent": "center"
+        },
+        "classNames": [
+          "fadedTextStepper"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Y--n4A3L5",
+      "hidden": false,
+      "nodes": [
+        "FvQy3w50pf",
+        "EEEAYACId-"
+      ],
+      "linkedNodes": {}
+    },
+    "myNHYXc4G": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "84px",
+          "height": "100%",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Y--n4A3L5",
+      "hidden": false,
+      "nodes": [
+        "UVJ-Y1nRx"
+      ],
+      "linkedNodes": {}
+    },
+    "16F-OxHhS": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "o3JHfvPAEnDcK6iZAdDYxL",
+            "method": "reservation.checkBooking",
+            "dataclass": "ReservationEntity",
+            "params": [
+              {
+                "name": "requestedStep",
+                "type": "Variant",
+                "datasource": "",
+                "id": "ocnB7yTZXvSdiELA7gJfgN",
+                "isHardCoded": true,
+                "hardCodedValue": "2"
+              }
+            ],
+            "type": "method",
+            "feedback": true,
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable"
+            }
+          },
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "ttu83kzv6waFg1yACBRBLC",
+            "type": "navigation",
+            "loader": "eavE4aT_7",
+            "parent": "webform-loader",
+            "target": "newBooking_agencyArr"
+          }
+        ],
+        "style": {},
+        "classNames": [
+          "stepperStepStyleBox"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "2UdhEuJSl",
+      "hidden": false,
+      "nodes": [
+        "l4nTsRm9XC",
+        "NlOdf3hZiK"
+      ],
+      "linkedNodes": {}
+    },
+    "l4nTsRm9XC": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "84px",
+          "height": "100%",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "16F-OxHhS",
+      "hidden": false,
+      "nodes": [
+        "UR6rDwFcSo"
+      ],
+      "linkedNodes": {}
+    },
+    "UR6rDwFcSo": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "cursor": "pointer"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "2",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>2</p>",
+        "classNames": [
+          "futureStepNumber"
+        ],
+        "serverSideRef": "circle2"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "l4nTsRm9XC",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "NlOdf3hZiK": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "100%",
+          "paddingBottom": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "start",
+          "flexDirection": "column",
+          "justifyContent": "center"
+        },
+        "classNames": [
+          "fadedTextStepper"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "16F-OxHhS",
+      "hidden": false,
+      "nodes": [
+        "_bfKwKJcL_",
+        "PoRPb1wVHP"
+      ],
+      "linkedNodes": {}
+    },
+    "NDu1WYNoP": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "p4wkuWtSohUqvK1ePeZZmF",
+            "method": "reservation.checkBooking",
+            "dataclass": "ReservationEntity",
+            "params": [
+              {
+                "name": "requestedStep",
+                "type": "Variant",
+                "datasource": "",
+                "id": "7k7Hjcy8iyRJ8MqU7JqfVS",
+                "isHardCoded": true,
+                "hardCodedValue": "3"
+              }
+            ],
+            "type": "method",
+            "feedback": true,
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable"
+            }
+          },
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "edYJQn2jFeyKLpVG2umKJk",
+            "type": "navigation",
+            "loader": "eavE4aT_7",
+            "parent": "webform-loader",
+            "target": "newBooking_details"
+          }
+        ],
+        "style": {},
+        "classNames": [
+          "stepperStepStyleBox"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "2UdhEuJSl",
+      "hidden": false,
+      "nodes": [
+        "eqbUdpTEQN",
+        "Gog-Vzaxdb"
+      ],
+      "linkedNodes": {}
+    },
+    "eqbUdpTEQN": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "84px",
+          "height": "100%",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "NDu1WYNoP",
+      "hidden": false,
+      "nodes": [
+        "sVugH_uaYl"
+      ],
+      "linkedNodes": {}
+    },
+    "sVugH_uaYl": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "cursor": "pointer"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "3",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>3</p>",
+        "classNames": [
+          "futureStepNumber"
+        ],
+        "serverSideRef": "circle3"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "eqbUdpTEQN",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Gog-Vzaxdb": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "100%",
+          "paddingBottom": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "start",
+          "flexDirection": "column",
+          "justifyContent": "center"
+        },
+        "classNames": [
+          "fadedTextStepper"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "NDu1WYNoP",
+      "hidden": false,
+      "nodes": [
+        "0n-v3O-xCh",
+        "Gvi-X9GBhO"
+      ],
+      "linkedNodes": {}
+    },
+    "BGWkAwV_6": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "gY6eNWa9VZ3hob7ZB9XJYv",
+            "method": "reservation.checkBooking",
+            "dataclass": "ReservationEntity",
+            "params": [
+              {
+                "name": "requestedStep",
+                "type": "Variant",
+                "datasource": "",
+                "id": "eBp6yNGyPHpTJsJP5ouNgZ",
+                "isHardCoded": true,
+                "hardCodedValue": "4"
+              }
+            ],
+            "type": "method",
+            "feedback": true,
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable"
+            }
+          },
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "jCxB2LpTvokqEPU7AfYAx4",
+            "type": "navigation",
+            "loader": "eavE4aT_7",
+            "parent": "webform-loader",
+            "target": "newBooking_searchResults"
+          }
+        ],
+        "style": {},
+        "classNames": [
+          "stepperStepStyleBox"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "2UdhEuJSl",
+      "hidden": false,
+      "nodes": [
+        "rtaVCFJ-OQ",
+        "DTxMf8G_rY"
+      ],
+      "linkedNodes": {}
+    },
+    "rtaVCFJ-OQ": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "84px",
+          "height": "100%",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "BGWkAwV_6",
+      "hidden": false,
+      "nodes": [
+        "-GZ7yeImre"
+      ],
+      "linkedNodes": {}
+    },
+    "-GZ7yeImre": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "cursor": "pointer"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "4",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>4</p>",
+        "classNames": [
+          "futureStepNumber"
+        ],
+        "serverSideRef": "circle4"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "rtaVCFJ-OQ",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "DTxMf8G_rY": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "100%",
+          "paddingBottom": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "start",
+          "flexDirection": "column",
+          "justifyContent": "center"
+        },
+        "classNames": [
+          "fadedTextStepper"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "BGWkAwV_6",
+      "hidden": false,
+      "nodes": [
+        "DB5zd3Agw9",
+        "1Y8CXis8ke"
+      ],
+      "linkedNodes": {}
+    },
+    "Jkc0i4UzK": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "8nxUmkGPHN3APCJYBvJSUk",
+            "method": "reservation.checkBooking",
+            "dataclass": "ReservationEntity",
+            "params": [
+              {
+                "name": "requestedStep",
+                "type": "Variant",
+                "datasource": "",
+                "id": "cywVavGNdrGAPy879PPz7T",
+                "isHardCoded": true,
+                "hardCodedValue": "5"
+              }
+            ],
+            "type": "method",
+            "feedback": true,
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable"
+            }
+          },
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "unJz4RN3e4Gh5hqTLpfkV1",
+            "type": "navigation",
+            "loader": "eavE4aT_7",
+            "parent": "webform-loader",
+            "target": "newBooking_options"
+          }
+        ],
+        "style": {},
+        "classNames": [
+          "stepperStepStyleBox"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "2UdhEuJSl",
+      "hidden": false,
+      "nodes": [
+        "o-mS7Z4o3d",
+        "70VOut2yq1"
+      ],
+      "linkedNodes": {}
+    },
+    "o-mS7Z4o3d": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "84px",
+          "height": "100%",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Jkc0i4UzK",
+      "hidden": false,
+      "nodes": [
+        "38vke506fT"
+      ],
+      "linkedNodes": {}
+    },
+    "38vke506fT": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "cursor": "pointer"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "5",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>5</p>",
+        "classNames": [
+          "futureStepNumber"
+        ],
+        "serverSideRef": "circle5"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "o-mS7Z4o3d",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "70VOut2yq1": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "100%",
+          "paddingBottom": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "start",
+          "justifyContent": "center",
+          "flexDirection": "column"
+        },
+        "classNames": [
+          "fadedTextStepper"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Jkc0i4UzK",
+      "hidden": false,
+      "nodes": [
+        "5UK1qi67lq",
+        "Ct7-58TbNG"
+      ],
+      "linkedNodes": {}
+    },
+    "zzDkY0dug": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "wNSy48QFqf8xdLq5T3Zywh",
+            "method": "reservation.checkBooking",
+            "dataclass": "ReservationEntity",
+            "params": [
+              {
+                "name": "requestedStep",
+                "type": "Variant",
+                "datasource": "",
+                "id": "qFCUfBm8kpP7GxkkE5iEen",
+                "isHardCoded": true,
+                "hardCodedValue": "6"
+              }
+            ],
+            "type": "method",
+            "feedback": true,
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable"
+            }
+          },
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "9nknKhtt9LsHqr5bVagbKE",
+            "type": "navigation",
+            "loader": "eavE4aT_7",
+            "parent": "webform-loader",
+            "target": "newBooking_customer"
+          }
+        ],
+        "style": {},
+        "classNames": [
+          "stepperStepStyleBox"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "2UdhEuJSl",
+      "hidden": false,
+      "nodes": [
+        "sFRsz_e_Km",
+        "jv3LoqEwlM"
+      ],
+      "linkedNodes": {}
+    },
+    "sFRsz_e_Km": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "84px",
+          "height": "100%",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "zzDkY0dug",
+      "hidden": false,
+      "nodes": [
+        "2dRhsNjRIO"
+      ],
+      "linkedNodes": {}
+    },
+    "2dRhsNjRIO": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "cursor": "pointer"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "6",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>6</p>",
+        "classNames": [
+          "futureStepNumber"
+        ],
+        "serverSideRef": "circle6"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "sFRsz_e_Km",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "jv3LoqEwlM": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "100%",
+          "paddingBottom": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "start",
+          "justifyContent": "center",
+          "flexDirection": "column"
+        },
+        "classNames": [
+          "fadedTextStepper"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "zzDkY0dug",
+      "hidden": false,
+      "nodes": [
+        "uOJKZNfn4c",
+        "aWZ1Fht2yu"
+      ],
+      "linkedNodes": {}
+    },
+    "l_8HWRen3": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "tuLyBdDkjzg6HnhkeUQbCx",
+            "method": "reservation.checkBooking",
+            "dataclass": "ReservationEntity",
+            "params": [
+              {
+                "name": "requestedStep",
+                "type": "Variant",
+                "datasource": "",
+                "id": "3aGEpj3nXDgHawx6U7WQES",
+                "isHardCoded": true,
+                "hardCodedValue": "7"
+              }
+            ],
+            "type": "method",
+            "feedback": true,
+            "namespace": "newBooking",
+            "returns": {
+              "name": "$0",
+              "type": "Variable"
+            }
+          },
+          {
+            "events": [
+              "onclick"
+            ],
+            "id": "n3mkh3qndPQufoSuw7Pf1f",
+            "type": "navigation",
+            "loader": "eavE4aT_7",
+            "parent": "webform-loader",
+            "target": "newBooking_summary"
+          }
+        ],
+        "style": {},
+        "classNames": [
+          "stepperStepStyleBox"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "2UdhEuJSl",
+      "hidden": false,
+      "nodes": [
+        "ewz1fhClnO",
+        "cI6DvF9ePL"
+      ],
+      "linkedNodes": {}
+    },
+    "ewz1fhClnO": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "84px",
+          "height": "100%",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "l_8HWRen3",
+      "hidden": false,
+      "nodes": [
+        "hR0AtQjHaw"
+      ],
+      "linkedNodes": {}
+    },
+    "hR0AtQjHaw": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "cursor": "pointer"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "7",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>7</p>",
+        "classNames": [
+          "futureStepNumber"
+        ],
+        "serverSideRef": "circle7"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "ewz1fhClnO",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "cI6DvF9ePL": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "height": "100%",
+          "paddingBottom": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "alignItems": "start",
+          "flexDirection": "column",
+          "justifyContent": "center"
+        },
+        "classNames": [
+          "fadedTextStepper"
+        ]
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "l_8HWRen3",
+      "hidden": false,
+      "nodes": [
+        "x51ZGpn6Vx"
+      ],
+      "linkedNodes": {}
+    },
+    "LOoh7gkx2": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "datasource": "",
+        "style": {
+          "fontSize": "22px",
+          "color": "#ffffffff",
+          "fontWeight": "700",
+          "fontFamily": "Helvetica"
+        },
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Book a car",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Book a car</p>"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "ZcxF2rkFm",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "eavE4aT_7": {
+      "type": {
+        "resolvedName": "WebformLoader"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "style": {
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "height": "100%"
+        },
+        "webform": "newBooking_agencyDep",
+        "datasource": ""
+      },
+      "displayName": "Webform Loader",
+      "custom": {},
+      "parent": "ukbRPIlbN",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "uzvHbKogD": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingTop": "0px",
+          "justifyContent": "center",
+          "alignItems": "stretch"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "ROOT",
+      "hidden": false,
+      "nodes": [
+        "2UdhEuJSl",
+        "ukbRPIlbN",
+        "BzLyMIkiYF"
+      ],
+      "linkedNodes": {}
+    },
+    "ukbRPIlbN": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "paddingTop": "10px",
+          "paddingRight": "10px",
+          "paddingBottom": "10px",
+          "paddingLeft": "0px",
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "space-between",
+          "borderTopRightRadius": "34px",
+          "borderBottomRightRadius": "34px",
+          "borderWidth": "0px",
+          "boxShadow": "0px 0px 26px -3px rgba(0,0,0,0.75)",
+          "height": "747px",
+          "maxWidth": "960px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "uzvHbKogD",
+      "hidden": false,
+      "nodes": [
+        "eavE4aT_7"
+      ],
+      "linkedNodes": {}
+    },
+    "PoRPb1wVHP": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.arrivalAgency.name",
+                "children": [
+                  {
+                    "text": "Arr agency name"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>newBooking:agencyArr.name </p>",
+        "datasource": "newBooking:reservation.arrivalAgency.name",
+        "serverSideRef": "value_step_2",
+        "style": {
+          "color": "#ffffffff",
+          "textAlign": "left",
+          "maxWidth": "220px"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "NlOdf3hZiK",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "1Y8CXis8ke": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.car.registration",
+                "children": [
+                  {
+                    "text": "XX-1234-YY"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>newBooking:car.registration </p>",
+        "datasource": "newBooking:reservation.car.registration",
+        "serverSideRef": "value_step_4",
+        "style": {
+          "color": "#ffffffff"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "DTxMf8G_rY",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "EEEAYACId-": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.departureAgency.name",
+                "children": [
+                  {
+                    "text": "Dep agency name"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>newBooking:agencyDep.name </p>",
+        "datasource": "newBooking:reservation.departureAgency.name",
+        "serverSideRef": "value_step_1",
+        "style": {
+          "color": "#ffffffff",
+          "textAlign": "left",
+          "maxWidth": "220px"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "0R8zcpWKy",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "FvQy3w50pf": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Departure agency",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Departure agency</p>",
+        "serverSideRef": "title_step_1"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "0R8zcpWKy",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "_bfKwKJcL_": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Arrival agency",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Arrival agency</p>",
+        "serverSideRef": "title_step_2",
+        "datasource": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "NlOdf3hZiK",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "0n-v3O-xCh": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Details",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Details</p>",
+        "serverSideRef": "title_step_3",
+        "datasource": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "Gog-Vzaxdb",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "DB5zd3Agw9": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Vehicle",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Vehicle</p>",
+        "serverSideRef": "title_step_4",
+        "datasource": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "DTxMf8G_rY",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "5UK1qi67lq": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Accessories",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Accessories</p>",
+        "serverSideRef": "title_step_5"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "70VOut2yq1",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "uOJKZNfn4c": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Customer",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Customer</p>",
+        "serverSideRef": "title_step_6"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "jv3LoqEwlM",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "x51ZGpn6Vx": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Summary",
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false
+              }
+            ]
+          }
+        ],
+        "text": "<p>Summary</p>",
+        "serverSideRef": "title_step_7",
+        "datasource": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "cI6DvF9ePL",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Ct7-58TbNG": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:optionCart.length",
+                "children": [
+                  {
+                    "text": "99"
+                  }
+                ]
+              },
+              {
+                "text": " options"
+              }
+            ]
+          }
+        ],
+        "text": "<p>newBooking:optionCart.length </p>",
+        "datasource": "newBooking:optionCart.length",
+        "serverSideRef": "value_step_5",
+        "style": {
+          "color": "#ffffffff"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "70VOut2yq1",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "aWZ1Fht2yu": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "deletable": true,
+        "moveable": true,
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.customer.fullname",
+                "children": [
+                  {
+                    "text": "Michael Twonizot"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "text": "<p>newBooking:customer.fullname </p>",
+        "datasource": "newBooking:reservation.customer.fullname",
+        "serverSideRef": "value_step_6",
+        "style": {
+          "color": "#ffffffff",
+          "maxWidth": "220px"
+        }
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "jv3LoqEwlM",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "sb-UPybtAx": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "paddingTop": "1px",
+          "paddingRight": "1px",
+          "paddingBottom": "1px",
+          "paddingLeft": "1px",
+          "justifyContent": "space-around"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Gvi-X9GBhO",
+      "hidden": false,
+      "nodes": [
+        "j-ErE_SFDu",
+        "b2pSqqEmVk",
+        "AloEkeBj6M",
+        "_salSakot8",
+        "iOSpuPyVa-"
+      ],
+      "linkedNodes": {}
+    },
+    "j-ErE_SFDu": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.departureDate",
+                "children": [
+                  {
+                    "text": "19/09/1980"
+                  }
+                ],
+                "dsType": "date",
+                "format": "dd/MM/yyyy"
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "datasource": "newBooking:reservation.departureDate",
+        "format": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "sb-UPybtAx",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "AloEkeBj6M": {
+      "type": {
+        "resolvedName": "Icon"
+      },
+      "isCanvas": false,
+      "props": {
+        "classNames": [],
+        "events": [],
+        "icon": "fa-caret-right",
+        "style": {
+          "color": "#ffffffff"
+        }
+      },
+      "displayName": "Icon",
+      "custom": {},
+      "parent": "sb-UPybtAx",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "b2pSqqEmVk": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.departureTimeString",
+                "children": [
+                  {
+                    "text": "10:00"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "datasource": "newBooking:reservation.departureTimeString",
+        "format": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "sb-UPybtAx",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "_salSakot8": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.arrivalDate",
+                "children": [
+                  {
+                    "text": "23/09/1980"
+                  }
+                ],
+                "dsType": "date",
+                "format": "dd/MM/yyyy"
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "datasource": "newBooking:reservation.arrivalDate",
+        "format": "dd/MM/yyyy"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "sb-UPybtAx",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "iOSpuPyVa-": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.arrivalTimeString",
+                "children": [
+                  {
+                    "text": "18:00"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "datasource": "newBooking:reservation.arrivalTimeString",
+        "format": ""
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "sb-UPybtAx",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "_SG9AxT3g0": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "display": "flex",
+          "justifyContent": "space-around",
+          "paddingTop": "1px",
+          "paddingRight": "1px",
+          "paddingBottom": "1px",
+          "paddingLeft": "1px"
+        }
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Gvi-X9GBhO",
+      "hidden": false,
+      "nodes": [
+        "bS0JuEfQK_",
+        "jXATRSs9rE"
+      ],
+      "linkedNodes": {}
+    },
+    "bS0JuEfQK_": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:gearbox",
+                "children": [
+                  {
+                    "text": "auto/man"
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "datasource": "newBooking:gearbox"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "_SG9AxT3g0",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "jXATRSs9rE": {
+      "type": {
+        "resolvedName": "Text"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "doc": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "type": "datasource",
+                "datasource": "newBooking:reservation.categoryCar.label",
+                "children": [
+                  {
+                    "text": "category",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false
+                  }
+                ]
+              },
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "datasource": "newBooking:reservation.categoryCar.label"
+      },
+      "displayName": "Text",
+      "custom": {},
+      "parent": "_SG9AxT3g0",
+      "hidden": false,
+      "nodes": [],
+      "linkedNodes": {}
+    },
+    "Gvi-X9GBhO": {
+      "type": {
+        "resolvedName": "StyleBox"
+      },
+      "isCanvas": true,
+      "props": {
+        "events": [],
+        "style": {
+          "fontSize": "10px",
+          "paddingTop": "1px",
+          "paddingRight": "1px",
+          "paddingBottom": "1px",
+          "paddingLeft": "1px",
+          "color": "#ffffffff"
+        },
+        "serverSideRef": "value_step_3"
+      },
+      "displayName": "Stylebox",
+      "custom": {},
+      "parent": "Gog-Vzaxdb",
+      "hidden": false,
+      "nodes": [
+        "sb-UPybtAx",
+        "_SG9AxT3g0"
+      ],
+      "linkedNodes": {}
+    },
+    "BzLyMIkiYF": {
+      "type": {
+        "resolvedName": "WebformLoader"
+      },
+      "isCanvas": false,
+      "props": {
+        "events": [],
+        "style": {
+          "width": "400px",
+          "paddingTop": "0px",
+          "paddingRight": "0px",
+          "paddingBottom": "0px",
+          "paddingLeft": "0px"
+        },
+        "webform": "bookingViewer"
+      },
+      "displayName": "Webform Loader",
+      "custom": {},
+      "parent": "uzvHbKogD",
+      "hidden": true,
+      "nodes": [],
+      "linkedNodes": {}
+    }
+  }
+}

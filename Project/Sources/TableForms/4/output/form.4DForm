@@ -1,0 +1,351 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 1426
+				},
+				"label_brand": {
+					"type": "text",
+					"text": "brand",
+					"top": 10,
+					"left": 7,
+					"width": 102,
+					"height": 16
+				},
+				"field_brand": {
+					"type": "input",
+					"dataSource": "[Models:4]brand:2",
+					"top": 37,
+					"left": 7,
+					"width": 102,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_2": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 114
+				},
+				"label_model": {
+					"type": "text",
+					"text": "model",
+					"top": 10,
+					"left": 119,
+					"width": 101,
+					"height": 16
+				},
+				"field_model": {
+					"type": "input",
+					"dataSource": "[Models:4]model:3",
+					"top": 37,
+					"left": 119,
+					"width": 101,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 225
+				},
+				"label_price": {
+					"type": "text",
+					"text": "price",
+					"top": 10,
+					"left": 230,
+					"width": 80,
+					"height": 16
+				},
+				"field_price": {
+					"type": "input",
+					"dataSource": "[Models:4]price:4",
+					"top": 37,
+					"left": 230,
+					"width": 90,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 325
+				},
+				"label_numberDoors": {
+					"type": "text",
+					"text": "numberDoors",
+					"top": 10,
+					"left": 330,
+					"width": 100,
+					"height": 17
+				},
+				"field_numberDoors": {
+					"type": "input",
+					"dataSource": "[Models:4]numberDoors:6",
+					"top": 37,
+					"left": 330,
+					"width": 84,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_5": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 419
+				},
+				"label_numberSeats": {
+					"type": "text",
+					"text": "numberSeats",
+					"top": 10,
+					"left": 424,
+					"width": 84,
+					"height": 17
+				},
+				"field_numberSeats": {
+					"type": "input",
+					"dataSource": "[Models:4]numberSeats:7",
+					"top": 37,
+					"left": 424,
+					"width": 105,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_6": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 534
+				},
+				"label_trunkCapacity": {
+					"type": "text",
+					"text": "trunkCapacity",
+					"top": 10,
+					"left": 540,
+					"width": 65,
+					"height": 16
+				},
+				"field_trunkCapacity": {
+					"type": "input",
+					"dataSource": "[Models:4]trunkCapacity:8",
+					"top": 37,
+					"left": 539,
+					"width": 66,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_7": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 610
+				},
+				"label_fuel": {
+					"type": "text",
+					"text": "fuel",
+					"top": 10,
+					"left": 615,
+					"width": 100,
+					"height": 17
+				},
+				"field_fuel": {
+					"type": "input",
+					"dataSource": "[Models:4]fuel:9",
+					"top": 37,
+					"left": 615,
+					"width": 89,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_8": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 709
+				},
+				"label_gearbox": {
+					"type": "text",
+					"text": "gearbox",
+					"top": 10,
+					"left": 714,
+					"width": 100,
+					"height": 17
+				},
+				"field_gearbox": {
+					"type": "input",
+					"dataSource": "[Models:4]gearbox:10",
+					"top": 37,
+					"left": 714,
+					"width": 118,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_9": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 837
+				},
+				"label_power": {
+					"type": "text",
+					"text": "power",
+					"top": 10,
+					"left": 842,
+					"width": 100,
+					"height": 17
+				},
+				"field_power": {
+					"type": "input",
+					"dataSource": "[Models:4]power:11",
+					"top": 37,
+					"left": 842,
+					"width": 100,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_10": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 947
+				},
+				"label_transmission": {
+					"type": "text",
+					"text": "transmission",
+					"top": 10,
+					"left": 952,
+					"width": 100,
+					"height": 17
+				},
+				"field_transmission": {
+					"type": "input",
+					"dataSource": "[Models:4]transmission:12",
+					"top": 37,
+					"left": 952,
+					"width": 144,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_11": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1101
+				},
+				"label_GPS": {
+					"type": "text",
+					"text": "GPS",
+					"top": 10,
+					"left": 1106,
+					"width": 100,
+					"height": 17
+				},
+				"field_GPS": {
+					"type": "input",
+					"dataSource": "[Models:4]GPS:13",
+					"top": 37,
+					"left": 1106,
+					"width": 92,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_12": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1203
+				},
+				"label_tankCapacity": {
+					"type": "text",
+					"text": "tankCapacity",
+					"top": 10,
+					"left": 1208,
+					"width": 89,
+					"height": 17
+				},
+				"field_tankCapacity": {
+					"type": "input",
+					"dataSource": "[Models:4]tankCapacity:15",
+					"top": 37,
+					"left": 1208,
+					"width": 83,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"field_tankCapacity1": {
+					"type": "input",
+					"dataSource": "[Models:4]photo:14",
+					"top": 31,
+					"left": 1441,
+					"width": 103,
+					"height": 27,
+					"borderStyle": "none",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1323
+				},
+				"label_tankCapacity1": {
+					"type": "text",
+					"text": "Color",
+					"top": 10,
+					"left": 1328,
+					"width": 89,
+					"height": 17
+				},
+				"field_tankCapacity2": {
+					"type": "input",
+					"dataSource": "[Models:4]color:5",
+					"top": 37,
+					"left": 1328,
+					"width": 83,
+					"height": 17,
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 75,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

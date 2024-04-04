@@ -1,0 +1,1577 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [],
+		"styles": [
+			{
+				"name": "whiteTile",
+				"content": "self {\n  background-color : #ffffffff;\n  border-radius : 15px;\n}",
+				"children": {},
+				"parentId": null,
+				"scope": "local",
+				"origin": "xXXbstd7G8",
+				"id": "pzuhAPh3b-X7-g43XE1e5"
+			},
+			{
+				"name": "tileTitle",
+				"content": "self {\n  font-size : 18px;\n  font-weight : 600;\n}",
+				"children": {},
+				"parentId": null,
+				"scope": "local",
+				"origin": "FHIb-XPIOa",
+				"id": "L29tfUvxq8dAsjkKTuwyp"
+			},
+			{
+				"name": "dataTableCSS",
+				"content": "self {\n  border-radius: 10px;\n  box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);\n}\n\nself .header .header-cell {\n  background-color: black;\n  color: #fff;\n  font-weight: bold;\n  padding: 1rem 1rem;\n}\n\nself .row {\n  align-items: center;\n}\n\nself .row .cell {\n  padding: 0.5rem 1rem;\n}\n\nself .row .cell > span {\n  justify-content: flex-start;\n}\n\nself .row.selected {\n  background-color: #d2d7f5;\n}\n\nself .row-even:not(.selected):not(:hover) {\n  background-color: #f8f6ff;\n}\n\nself .header .resizable > :not([hidden]) ~ :not([hidden]),\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "V1e7mKruhfL_GUspUqgJo"
+			},
+			{
+				"name": "blackText",
+				"content": "self {\n\tfont-weight: 400;\n  font-size : 16px;\n}",
+				"children": {},
+				"parentId": null,
+				"scope": "local",
+				"origin": "T5AzIp-GlQ",
+				"id": "oHiOPPpeEd-L-wXLE9_mV"
+			},
+			{
+				"name": "greenDatatable",
+				"content": "self {\n  border-radius: 10px;\n\tborder-width: 0.5px;\n\tborder-color: #6fc295;\n}\n\nself .header .header-cell {\n  background-color: #eff9f4;\n  color: #6fc295;\n  font-weight: 400;\n  padding: 1.25rem 2rem;\n\t  text-align: center;\n}\n\nself .row {\n  align-items: center;\n}\n\nself .row .cell {\n  padding: 0.5rem 2rem;\n}\n\nself .row .cell > span {\n  justify-content: flex-start;\n}\n\nself .row.selected {\n  background-color: #d2d7f5;\n}\n\nself .header .resizable > :not([hidden]) ~ :not([hidden]),\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "vNCukxLQZEIiOHHVHZphI"
+			},
+			{
+				"id": "dYTk16aMTAzBgcqIhThwn",
+				"name": "blackTextBold",
+				"content": "self {\n\tfont-weight: 600;\n  font-size : 16px;\n}",
+				"scope": "local",
+				"parentId": null,
+				"children": {}
+			},
+			{
+				"id": "4fj5vbrFTj9P8hH-q2LHi",
+				"name": "greenTile",
+				"content": "self {\n  background-color : #eff9f4;\n  border-radius : 15px;\n}",
+				"scope": "local",
+				"parentId": null,
+				"children": {}
+			}
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "",
+						"events": [
+							"onload"
+						],
+						"id": "korcZSbMjfe39eZrRUwR1m",
+						"method": "",
+						"params": []
+					}
+				],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false,
+				"style": {
+					"height": "100%",
+					"paddingLeft": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"T9HGjwk-UM"
+			],
+			"linkedNodes": {}
+		},
+		"1SK-yz-2Q-": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:sharedAgency.name",
+								"children": [
+									{
+										"text": "Name",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:sharedAgency.name",
+				"style": {
+					"fontWeight": "700"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "UhWTuCMSU-",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"NgjbgtZFRU": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:sharedAgency.address",
+								"children": [
+									{
+										"text": "Address",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:sharedAgency.address",
+				"classNames": [
+					"greyText"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "UhWTuCMSU-",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"UhWTuCMSU-": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"alignItems": "start",
+					"justifyContent": "flex-start",
+					"gap": "5px"
+				},
+				"classNames": [
+					"whiteTile"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "WOqiUG1izP",
+			"hidden": false,
+			"nodes": [
+				"1SK-yz-2Q-",
+				"NgjbgtZFRU"
+			],
+			"linkedNodes": {}
+		},
+		"VBWQAWvaMO": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Working employees"
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"color": "#71c195"
+				},
+				"classNames": [
+					"tileTitle"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "WveDUAaoAR",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"WveDUAaoAR": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"paddingTop": "2px",
+					"paddingRight": "2px",
+					"paddingBottom": "2px",
+					"paddingLeft": "2px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ElgLyh21Iq",
+			"hidden": false,
+			"nodes": [
+				"VBWQAWvaMO"
+			],
+			"linkedNodes": {}
+		},
+		"785k2F3kLd": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": "70px",
+					"height": "70px",
+					"minWidth": "70px",
+					"minHeight": "70px",
+					"maxWidth": "70px",
+					"maxHeight": "70px",
+					"borderRadius": "100%",
+					"borderWidth": "1px"
+				},
+				"datasource": "S2023:$This.employee.photo"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "QDDYU1ZviE",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"QdK4YSckCh": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:$This.employee.fullname",
+								"children": [
+									{
+										"text": "name",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:$This.employee.fullname",
+				"style": {
+					"fontWeight": "700",
+					"textAlign": "left",
+					"width": "200px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "dUw7AoOWRU",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"cf2044BGDD": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:$This.todayTaskType",
+								"children": [
+									{
+										"text": "type",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " at "
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:$This.departureTimeString",
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "time"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:$This.todayTaskType,S2023:$This.departureTimeString",
+				"classNames": [
+					"greyText"
+				],
+				"style": {
+					"textAlign": "left",
+					"width": "150px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "dUw7AoOWRU",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"dUw7AoOWRU": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "center",
+					"justifyContent": "flex-start",
+					"width": "auto",
+					"paddingTop": "5px",
+					"paddingRight": "5px",
+					"paddingBottom": "5px",
+					"paddingLeft": "5px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "QDDYU1ZviE",
+			"hidden": false,
+			"nodes": [
+				"QdK4YSckCh",
+				"cf2044BGDD"
+			],
+			"linkedNodes": {}
+		},
+		"QDDYU1ZviE": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "5px",
+					"width": "auto",
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "0Z6uLYVLpg",
+			"hidden": false,
+			"nodes": [
+				"785k2F3kLd",
+				"dUw7AoOWRU"
+			],
+			"linkedNodes": {}
+		},
+		"0Z6uLYVLpg": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"minHeight": "80px",
+					"display": "flex",
+					"alignItems": "center",
+					"width": "auto",
+					"flexDirection": "row",
+					"paddingLeft": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"gap": "10px",
+					"justifyContent": "space-between"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {
+				"contentHeight": 80
+			},
+			"parent": "sKKI-GAY_i",
+			"hidden": false,
+			"nodes": [
+				"QDDYU1ZviE"
+			],
+			"linkedNodes": {}
+		},
+		"sKKI-GAY_i": {
+			"type": {
+				"resolvedName": "Matrix"
+			},
+			"isCanvas": false,
+			"props": {
+				"orientation": "vertical",
+				"iterable": true,
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "",
+						"events": [
+							"onclick"
+						],
+						"id": "pqTCzW6txQsonfNH2hqYLC",
+						"method": "",
+						"params": []
+					}
+				],
+				"style": {
+					"height": "400px",
+					"borderWidth": "0px"
+				},
+				"datasource": "S2023:reservations",
+				"gridProps": {
+					"styleboxWidth": 561,
+					"styleboxHeight": 80,
+					"enableMosaic": false,
+					"enableFlex": false,
+					"flexProps": {
+						"nbOfRows": 4,
+						"nbOfColumns": 1
+					}
+				},
+				"currentElement": "S2023:aReservation"
+			},
+			"displayName": "Matrix",
+			"custom": {},
+			"parent": "rOY8bcLGkw",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"container": "0Z6uLYVLpg"
+			}
+		},
+		"rOY8bcLGkw": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"gap": "5px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ElgLyh21Iq",
+			"hidden": false,
+			"nodes": [
+				"sKKI-GAY_i"
+			],
+			"linkedNodes": {}
+		},
+		"ElgLyh21Iq": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"classNames": [
+					"whiteTile"
+				],
+				"style": {
+					"paddingTop": "20px",
+					"paddingRight": "20px",
+					"paddingBottom": "20px",
+					"paddingLeft": "20px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "WOqiUG1izP",
+			"hidden": false,
+			"nodes": [
+				"WveDUAaoAR",
+				"rOY8bcLGkw"
+			],
+			"linkedNodes": {}
+		},
+		"WOqiUG1izP": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "40%",
+					"display": "flex",
+					"gap": "10px",
+					"flexDirection": "column",
+					"justifyContent": "flex-start",
+					"height": "auto",
+					"alignItems": "start",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "T9HGjwk-UM",
+			"hidden": false,
+			"nodes": [
+				"UhWTuCMSU-",
+				"ElgLyh21Iq"
+			],
+			"linkedNodes": {}
+		},
+		"KdBzvOHpAU": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "# ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.ID",
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "ID"
+									}
+								],
+								"dsType": "long",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:aReservation.ID",
+				"style": {},
+				"classNames": [
+					"blackTextBold"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "sfX5XgJA4c",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"sfX5XgJA4c": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "start",
+					"justifyContent": "center",
+					"gap": "8px",
+					"paddingTop": "12px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "IfSRPoIAnm",
+			"hidden": false,
+			"nodes": [
+				"KdBzvOHpAU"
+			],
+			"linkedNodes": {}
+		},
+		"f8nzWFIctY": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "From",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"greyTextBold"
+				],
+				"style": {}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "J46LRx_vmn",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"BGJWtrRqmr": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.departureDate",
+								"children": [
+									{
+										"text": "depDate",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "date",
+								"format": "MM/dd/yyyy"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " "
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.departureTimeString",
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "depTime"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:aReservation.departureDate,S2023:aReservation.departureTimeString",
+				"classNames": [
+					"blackText"
+				],
+				"style": {}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "J46LRx_vmn",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"2JUHZTBkaI": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "To",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"greyTextBold"
+				],
+				"style": {}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "J46LRx_vmn",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"hICFF2NrzL": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.arrivalDate",
+								"children": [
+									{
+										"text": "arrDate",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "date",
+								"format": "MM/dd/yyyy"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " "
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.arrivalTimeString",
+								"children": [
+									{
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "arrTime"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:aReservation.arrivalDate,S2023:aReservation.arrivalTimeString",
+				"classNames": [
+					"blackText"
+				],
+				"style": {}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "J46LRx_vmn",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"J46LRx_vmn": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "start",
+					"justifyContent": "flex-start",
+					"gap": "8px",
+					"paddingTop": "12px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "IfSRPoIAnm",
+			"hidden": false,
+			"nodes": [
+				"f8nzWFIctY",
+				"BGJWtrRqmr",
+				"2JUHZTBkaI",
+				"hICFF2NrzL"
+			],
+			"linkedNodes": {}
+		},
+		"nhaKhlDurI": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Price",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"greyTextBold"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "pHrqznnHsA",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"pHrqznnHsA": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "30%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "5ejYq4fMyK",
+			"hidden": false,
+			"nodes": [
+				"nhaKhlDurI"
+			],
+			"linkedNodes": {}
+		},
+		"ZuJ-2JWJx5": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": " ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.price",
+								"children": [
+									{
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "price"
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:aReservation.price",
+				"style": {},
+				"classNames": [
+					"greyText"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "j5fSx-Dg-r",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"j5fSx-Dg-r": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "70%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "5ejYq4fMyK",
+			"hidden": false,
+			"nodes": [
+				"ZuJ-2JWJx5"
+			],
+			"linkedNodes": {}
+		},
+		"5ejYq4fMyK": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "start",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "IfSRPoIAnm",
+			"hidden": false,
+			"nodes": [
+				"pHrqznnHsA",
+				"j5fSx-Dg-r"
+			],
+			"linkedNodes": {}
+		},
+		"t1t43FgGCu": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Customer",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"classNames": [
+					"greyTextBold"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "Ps4tsT9BWb",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Ps4tsT9BWb": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "30%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "jSOgllHOF4",
+			"hidden": false,
+			"nodes": [
+				"t1t43FgGCu"
+			],
+			"linkedNodes": {}
+		},
+		"8V1BGXLypS": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": " ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.customer.fullname",
+								"children": [
+									{
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "name"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:aReservation.customer.fullname",
+				"style": {},
+				"classNames": [
+					"greyText"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "bjzJip_tfH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"FZEivf39DU": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": " ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.customer.mail",
+								"children": [
+									{
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "mail"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:aReservation.customer.mail",
+				"style": {},
+				"classNames": [
+					"greyText"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "bjzJip_tfH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"bjzJip_tfH": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "70%",
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "jSOgllHOF4",
+			"hidden": false,
+			"nodes": [
+				"8V1BGXLypS",
+				"FZEivf39DU"
+			],
+			"linkedNodes": {}
+		},
+		"jSOgllHOF4": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"alignItems": "start",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "IfSRPoIAnm",
+			"hidden": false,
+			"nodes": [
+				"Ps4tsT9BWb",
+				"bjzJip_tfH"
+			],
+			"linkedNodes": {}
+		},
+		"fpCvZfAWO1": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Booked vehicle",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"color": "#71c195"
+				},
+				"classNames": [
+					"greyTextBold"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "b774J0QgTB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"UxMGooaU-y": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": "70px",
+					"height": "70px",
+					"minWidth": "70px",
+					"minHeight": "70px",
+					"maxWidth": "70px",
+					"maxHeight": "70px",
+					"borderRadius": "100%",
+					"borderWidth": "1px"
+				},
+				"datasource": "S2023:aReservation.car.model.photo"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "b774J0QgTB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"bSF0Jmv_c6": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": " ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"type": "datasource",
+								"datasource": "S2023:aReservation.car.abrandModel",
+								"children": [
+									{
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "name"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": ""
+							}
+						]
+					}
+				],
+				"datasource": "S2023:aReservation.car.abrandModel",
+				"style": {},
+				"classNames": [
+					"blackTextBold"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "b774J0QgTB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"b774J0QgTB": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"alignItems": "center",
+					"gap": "8px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "IfSRPoIAnm",
+			"hidden": false,
+			"nodes": [
+				"fpCvZfAWO1",
+				"UxMGooaU-y",
+				"bSF0Jmv_c6"
+			],
+			"linkedNodes": {}
+		},
+		"k5cu6txiGi": {
+			"type": {
+				"resolvedName": "DataTable"
+			},
+			"isCanvas": false,
+			"props": {
+				"loopable": true,
+				"classNames": [
+					"greenDatatable"
+				],
+				"events": [],
+				"style": {
+					"height": "150px"
+				},
+				"headerHeight": 40,
+				"rowHeight": 30,
+				"datasource": "S2023:aReservation.alternatives",
+				"columns": [
+					{
+						"title": "Alternatives vehicles",
+						"source": "afullBrandModel",
+						"format": "",
+						"width": "400px",
+						"sorting": false,
+						"id": "qYRWcZrpqVYgD344YJBqkB"
+					}
+				]
+			},
+			"displayName": "DataTable",
+			"custom": {},
+			"parent": "IfSRPoIAnm",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"IfSRPoIAnm": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"alignItems": "center",
+					"justifyContent": "space-between",
+					"height": "100%"
+				},
+				"classNames": [
+					"whiteTile"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "x_38ItdXXC",
+			"hidden": false,
+			"nodes": [
+				"sfX5XgJA4c",
+				"J46LRx_vmn",
+				"5ejYq4fMyK",
+				"jSOgllHOF4",
+				"b774J0QgTB",
+				"k5cu6txiGi"
+			],
+			"linkedNodes": {}
+		},
+		"x_38ItdXXC": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"alignItems": "start",
+					"justifyContent": "flex-start",
+					"width": "50%",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "T9HGjwk-UM",
+			"hidden": false,
+			"nodes": [
+				"IfSRPoIAnm"
+			],
+			"linkedNodes": {}
+		},
+		"T9HGjwk-UM": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"height": "auto",
+					"gap": "10px",
+					"flexDirection": "row",
+					"backgroundColor": "#f7f9fb",
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"WOqiUG1izP",
+				"x_38ItdXXC"
+			],
+			"linkedNodes": {}
+		}
+	}
+}

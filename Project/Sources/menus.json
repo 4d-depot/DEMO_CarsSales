@@ -1,0 +1,42 @@
+{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Barre #1",
+			"items": [
+				{
+					"link": 32001
+				},
+				{
+					"link": 32003
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 32003,
+			"title": ":xliff:CommonMenuMode",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemDesign",
+					"action": "design"
+				}
+			]
+		},
+		{
+			"link": 32001,
+			"title": "Demo",
+			"items": [
+				{
+					"title": "PrintPreview",
+					"method": "PrintInvoices"
+				},
+				{
+					"title": "Export as pdf",
+					"method": "ExportInvoices"
+				}
+			]
+		}
+	]
+}

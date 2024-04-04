@@ -1,0 +1,208 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "agencies",
+				"type": "entitysel",
+				"dataclass": "Agency",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "search",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			},
+			{
+				"id": "selAgency",
+				"type": "entity",
+				"dataclass": "Agency",
+				"from": "agencies",
+				"namespace": "",
+				"initialValue": "first",
+				"depth": null
+			}
+		],
+		"styles": [
+			{
+				"name": "whiteTile",
+				"content": "self {\n  background-color : #ffffffff;\n  border-radius : 15px;\n}",
+				"children": {},
+				"parentId": null,
+				"scope": "local",
+				"origin": "xXXbstd7G8",
+				"id": "pzuhAPh3b-X7-g43XE1e5"
+			},
+			{
+				"name": "greyText",
+				"content": "self {\n  color : #9ea7ba;\n}",
+				"children": {},
+				"parentId": null,
+				"scope": "local",
+				"origin": "snZafQwqkX",
+				"id": "oaqCNB-3mKJAARJHYDTP9"
+			},
+			{
+				"name": "tileTitle",
+				"content": "self {\n  font-size : 18px;\n  font-weight : 600;\n}",
+				"children": {},
+				"parentId": null,
+				"scope": "local",
+				"origin": "FHIb-XPIOa",
+				"id": "L29tfUvxq8dAsjkKTuwyp"
+			},
+			{
+				"name": "dataTableCSS",
+				"content": "self {\n\n}\n\nself .header .header-cell {\n  background-color: #eff9f4;\n  color: #6fc295;\n  font-weight: 600;\n  padding: 1.25rem 2rem;\n\t  text-align: center;\n}\n\nself .row {\n \n}\n\nself .row .cell {\n  padding: 1.5rem 2rem;\n}\n\nself .row .cell > span {\n  justify-content: flex-start;\n}\n\nself .row.selected {\n  background-color: #f5f6fe;\n}\n\nself .header .resizable > :not([hidden]) ~ :not([hidden]),\nself .row > :not([hidden]) ~ :not([hidden]),\nself .Grid .innerScrollContainer,\nself .Grid .innerScrollContainer > :not([hidden]) ~ :not([hidden]) {\n  border-width: 0;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "V1e7mKruhfL_GUspUqgJo"
+			}
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false,
+				"style": {
+					"height": "850px"
+				}
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"AFDr_jneSp"
+			],
+			"linkedNodes": {}
+		},
+		"AFDr_jneSp": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "#f7f9fb",
+					"paddingLeft": "30px",
+					"paddingRight": "30px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"w4mI2I4Kld"
+			],
+			"linkedNodes": {}
+		},
+		"w4mI2I4Kld": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "AFDr_jneSp",
+			"hidden": false,
+			"nodes": [
+				"kXT_1QYfVU",
+				"XA-6BMbvrg"
+			],
+			"linkedNodes": {}
+		},
+		"kXT_1QYfVU": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"fontSize": "18px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "w4mI2I4Kld",
+			"hidden": false,
+			"nodes": [
+				"lOrdCSZVmZ"
+			],
+			"linkedNodes": {}
+		},
+		"XA-6BMbvrg": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "w4mI2I4Kld",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"lOrdCSZVmZ": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Your session has been closed",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"color": "#71c195"
+				},
+				"classNames": [
+					"tileTitle"
+				]
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "kXT_1QYfVU",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

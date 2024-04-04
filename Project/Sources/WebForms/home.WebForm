@@ -1,0 +1,1200 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "agencies",
+				"type": "entitysel",
+				"dataclass": "Agency",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "employees",
+				"type": "entitysel",
+				"dataclass": "Employee",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "cars",
+				"type": "entitysel",
+				"dataclass": "Car",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "reservations",
+				"type": "entitysel",
+				"dataclass": "Reservation",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "datasetSize",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": "Tiny"
+			},
+			{
+				"id": "customers",
+				"type": "entitysel",
+				"dataclass": "Customer",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "chosenoptions",
+				"type": "entitysel",
+				"dataclass": "ChosenOptions",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "inventories",
+				"type": "entitysel",
+				"dataclass": "Inventory",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			}
+		],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "center",
+					"alignItems": "center"
+				},
+				"isInsideCanvas": false,
+				"airyMode": false
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"hidden": false,
+			"nodes": [
+				"dr0YiP_AG"
+			],
+			"linkedNodes": {}
+		},
+		"dr0YiP_AG": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "100%",
+					"borderWidth": "0px",
+					"borderRadius": "34px",
+					"borderTopLeftRadius": "34px",
+					"borderBottomLeftRadius": "34px",
+					"display": "flex",
+					"flexDirection": "column",
+					"backgroundColor": "transparent",
+					"boxShadow": "0px 0px 21px -11px rgba(0,0,0,0.75)",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"fontSize": "14px",
+					"minWidth": "360px",
+					"maxWidth": "1000px",
+					"minHeight": "600px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"obbJfY3aB",
+				"LYiJxK7Z7A"
+			],
+			"linkedNodes": {}
+		},
+		"obbJfY3aB": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": true,
+				"moveable": true,
+				"datasource": "",
+				"style": {
+					"fontSize": "15px",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontWeight": "300",
+					"marginBottom": "30px"
+				},
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Welcome to ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "CarsQodlyRent"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "A car rental back office management system made with "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "Qodly Studio"
+							}
+						]
+					}
+				],
+				"text": "<p>Welcome to <b>Cars4DRent</b></p> <p>The first car renting back office management made with <b>4D Web Studio</b></p>"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "dr0YiP_AG",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"LYiJxK7Z7A": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "dr0YiP_AG",
+			"hidden": false,
+			"nodes": [
+				"gw-3YFDbKB",
+				"mxzu8iHP41"
+			],
+			"linkedNodes": {}
+		},
+		"gw-3YFDbKB": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"minWidth": "50%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "LYiJxK7Z7A",
+			"hidden": false,
+			"nodes": [
+				"3ENLEB32FS",
+				"4drKTaELms"
+			],
+			"linkedNodes": {}
+		},
+		"mxzu8iHP41": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"minWidth": "50%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "LYiJxK7Z7A",
+			"hidden": false,
+			"nodes": [
+				"9HNVYeBX_A",
+				"MMYK9rfttj",
+				"kOJGqbo8NL"
+			],
+			"linkedNodes": {}
+		},
+		"4drKTaELms": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [
+					{
+						"type": "navigation",
+						"id": "2FqKJoimkezHLcazneynzJ",
+						"events": [
+							"onclick"
+						],
+						"externalLink": false,
+						"loader": "a1Xmr6xEGH",
+						"parent": "webform-loader",
+						"target": "userAccount"
+					}
+				],
+				"style": {
+					"width": "auto",
+					"paddingTop": "2px",
+					"paddingRight": "8px",
+					"paddingBottom": "2px",
+					"paddingLeft": "8px",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"flexDirection": "row",
+					"cursor": "pointer"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "gw-3YFDbKB",
+			"hidden": false,
+			"nodes": [
+				"f7EjdvwQky",
+				"UUpHkIh24T"
+			],
+			"linkedNodes": {}
+		},
+		"f7EjdvwQky": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": "80px",
+					"height": "80px",
+					"borderRadius": "100%",
+					"minWidth": "80px",
+					"minHeight": "80px",
+					"maxWidth": "80px",
+					"maxHeight": "80px",
+					"zIndex": "1",
+					"borderColor": "#ffffffff",
+					"borderWidth": "4px",
+					"boxShadow": "1px 2px 20px -11px #000000ff"
+				},
+				"datasource": "session:user.photo"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "4drKTaELms",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"UUpHkIh24T": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"paddingTop": "5px",
+					"paddingRight": "5px",
+					"paddingBottom": "5px",
+					"paddingLeft": "60px",
+					"fontSize": "10px",
+					"marginLeft": "-40px",
+					"borderRadius": "4px",
+					"borderWidth": "1px",
+					"backgroundColor": "#ffffffff",
+					"boxShadow": "1px 2px 20px -11px #000000ff"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "4drKTaELms",
+			"hidden": false,
+			"nodes": [
+				"CzuaWbKcNq",
+				"2dkduvm_Dw",
+				"3PO-oAdXOj"
+			],
+			"linkedNodes": {}
+		},
+		"CzuaWbKcNq": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"alignItems": "center",
+					"fontSize": "16px",
+					"fontWeight": "500"
+				},
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "session:user.fullname",
+								"children": [
+									{
+										"text": "User name"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				],
+				"datasource": "session:user.fullname"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "UUpHkIh24T",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"2dkduvm_Dw": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"id": "text",
+				"datasource": "session:user.mail",
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "session:user.mail",
+								"children": [
+									{
+										"text": "user@mail.com"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				],
+				"style": {
+					"color": "#c2c2c3",
+					"fontWeight": "500"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "UUpHkIh24T",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"3PO-oAdXOj": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"id": "text",
+				"datasource": "session:user.roleDetails",
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "session:user.roleDetails",
+								"children": [
+									{
+										"text": "user profile"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				],
+				"style": {
+					"color": "#c2c2c3",
+					"fontWeight": "500"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "UUpHkIh24T",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"9HNVYeBX_A": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "mxzu8iHP41",
+			"hidden": false,
+			"nodes": [
+				"eEEsOIBNfE"
+			],
+			"linkedNodes": {}
+		},
+		"eEEsOIBNfE": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Database records are presented below.",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "Don't forget to generate data before using the app!"
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "9HNVYeBX_A",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"3ENLEB32FS": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "gw-3YFDbKB",
+			"hidden": false,
+			"nodes": [
+				"-StlCmGWMN"
+			],
+			"linkedNodes": {}
+		},
+		"-StlCmGWMN": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "You've been assigned the employee below, click on the section below to update your profile",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "3ENLEB32FS",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"MMYK9rfttj": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"justifyContent": "space-around"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "mxzu8iHP41",
+			"hidden": false,
+			"nodes": [
+				"LHA9VVWFRI",
+				"oD-UfUFZ2L"
+			],
+			"linkedNodes": {}
+		},
+		"LHA9VVWFRI": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "agencies.length",
+								"children": [
+									{
+										"text": "[999]"
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": " agencies"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "employees.length",
+								"children": [
+									{
+										"text": "[999]"
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": " employees"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "customers.length",
+								"children": [
+									{
+										"text": "[999]"
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": " customers"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "cars.length",
+								"children": [
+									{
+										"text": "[999]"
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": " cars"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "reservations.length",
+								"children": [
+									{
+										"text": "[999]"
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": " bookings"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "chosenoptions.length",
+								"children": [
+									{
+										"text": "[999]"
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": " booked options"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "inventories.length",
+								"children": [
+									{
+										"text": "[999]"
+									}
+								],
+								"dsType": "number",
+								"format": ""
+							},
+							{
+								"text": " inventories"
+							}
+						]
+					}
+				],
+				"datasource": "agencies.length,employees.length,customers.length,cars.length,reservations.length,chosenoptions.length,inventories.length",
+				"style": {}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "MMYK9rfttj",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"oD-UfUFZ2L": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "50%"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "MMYK9rfttj",
+			"hidden": false,
+			"nodes": [
+				"GsbEQv5b8M"
+			],
+			"linkedNodes": {}
+		},
+		"GsbEQv5b8M": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "7rtLZPALyVedPGNUHChMGu",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "agencies",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "agWmUkm6EeGtaDm3VVZDHM",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "cars",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "4aQDARvuhpyMFdRjf6NJfM",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "employees",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "iwoyVk5ovEyKFnCf7hEAn3",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "reservations",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "fNwf9J4Aa8LsesNuxSrBRf",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "customers",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "ozhBefLFFuDcdjeaTDyNGT",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "chosenoptions",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "rPs8qnK31pDoJWYDxsz76f",
+						"events": [
+							"onclick"
+						],
+						"action": "refresh",
+						"datasource": {
+							"name": "inventories",
+							"from": "",
+							"type": "entitysel",
+							"namespace": ""
+						}
+					}
+				],
+				"icon": "fa-refresh",
+				"style": {
+					"cursor": "pointer"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "oD-UfUFZ2L",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"kOJGqbo8NL": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "flex-start"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "mxzu8iHP41",
+			"hidden": false,
+			"nodes": [
+				"8UYKKcB7lY",
+				"AYT8_LgsMr",
+				"GPhxmyAXVf"
+			],
+			"linkedNodes": {}
+		},
+		"8UYKKcB7lY": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"justifyContent": "space-around",
+					"flexDirection": "column"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "kOJGqbo8NL",
+			"hidden": false,
+			"nodes": [
+				"8rFDdfyjRL"
+			],
+			"linkedNodes": {}
+		},
+		"8rFDdfyjRL": {
+			"type": {
+				"resolvedName": "SelectInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label"
+			},
+			"displayName": "Select input",
+			"custom": {},
+			"parent": "8UYKKcB7lY",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "ey-_2a7pIU",
+				"select": "-pH3fYqwAP"
+			}
+		},
+		"ey-_2a7pIU": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Dataset size",
+				"hidden": false,
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "8rFDdfyjRL",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"-pH3fYqwAP": {
+			"type": {
+				"resolvedName": "Select"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-select",
+				"options": [
+					{
+						"label": "Tiny",
+						"value": "Tiny",
+						"id": "9nDhxpsw61Vrx2Ht2xh5xi"
+					},
+					{
+						"label": "Small (approx 112k bookings)",
+						"value": "Small",
+						"id": "o8rQ3Lj8JZKhW2XwrZvAjn"
+					},
+					{
+						"label": "Medium (approx 515k booking)",
+						"value": "Medium",
+						"id": "88cUz1XATdPa4GXTs8bFqS"
+					},
+					{
+						"label": "Big",
+						"value": "Big",
+						"id": "aHQ62ReWVL6JPyMVFx2MsP"
+					}
+				],
+				"hidden": false,
+				"datasource": "datasetSize",
+				"moveable": false,
+				"style": {},
+				"defaultValue": "Tiny"
+			},
+			"displayName": "Select",
+			"custom": {},
+			"parent": "8rFDdfyjRL",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"AYT8_LgsMr": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Generate data",
+				"classNames": [],
+				"events": [
+					{
+						"events": [
+							"onclick"
+						],
+						"id": "9pkzS4w4GEN1vfUiTUBcb8",
+						"type": "method",
+						"method": "ds.DataInit.generate",
+						"params": [
+							{
+								"id": "o655FaBcVzZvcdbbJNr4gb",
+								"datasource": "datasetSize"
+							},
+							{
+								"id": "ie9we5QZfBTS98BudSpv74",
+								"datasource": "dropStatic",
+								"isHardCoded": true,
+								"hardCodedValue": "true",
+								"hardCodedType": "bool"
+							}
+						],
+						"returns": {},
+						"feedback": true
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "inline"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "kOJGqbo8NL",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "RtV0kZv4AV"
+			}
+		},
+		"RtV0kZv4AV": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"hidden": false,
+				"icon": "fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "AYT8_LgsMr",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"GPhxmyAXVf": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Remove all data",
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataInit",
+						"events": [
+							"onclick"
+						],
+						"id": "qf1VvXeyfAdYpRJAQrji8K",
+						"method": "ds.DataInit.dropAllTables",
+						"params": [],
+						"returns": {
+							"name": "$0",
+							"type": "Variable"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "inline"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "kOJGqbo8NL",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "dZ925h9I9w"
+			}
+		},
+		"dZ925h9I9w": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"hidden": false,
+				"icon": "fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "GPhxmyAXVf",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}
